@@ -1,12 +1,12 @@
 <!-- Header Banner with High-Contrast Text -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0B3C5D&height=180&section=header&text=Dev%20Rai&fontSize=40&animation=fadeIn&fontColor=FFFFFF" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=9800cb&height=180&section=header&text=Dev%20Rai&fontSize=40&animation=fadeIn&fontColor=FFFFFF&fontFamily=Fira%20Code" width="100%" />
 </p>
 
 <!-- Cleaned & Expanded Typing Animation -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Computer+Engineering+at+SPIT+Mumbai;Distributed+Systems+and+Backend;AI+and+ML+Enthusiast;Building+Robust+Software&font=Fira+Code&center=true&width=600&height=50&color=00ffef&vCenter=true&size=18" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?lines=Computer+Engineering+at+SPIT+Mumbai;Distributed+Systems+and+Backend;AI+and+ML+Enthusiast;Building+Robust+Software&font=Fira+Code&center=true&width=600&height=50&color=be00ff&vCenter=true&size=18" alt="Typing SVG" />
   </a>
 </p>
 
