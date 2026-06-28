@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" fill="none">
+  <style>
+    .terminal-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1; rx: 8; ry: 8; }
+    .header-text { fill: #8b949e; font-family: 'Fira Code', monospace, sans-serif; font-size: 13px; }
+    .cmd { fill: #58a6ff; font-family: 'Fira Code', monospace, sans-serif; font-size: 14px; font-weight: bold; }
+    .username { fill: #ff7b72; font-family: 'Fira Code', monospace, sans-serif; font-size: 14px; font-weight: bold; }
+    .line { stroke: #30363d; stroke-width: 1; }
+    .label { fill: #79c0ff; font-family: 'Fira Code', monospace, sans-serif; font-size: 13px; font-weight: bold; }
+    .val { fill: #c9d1d9; font-family: 'Fira Code', monospace, sans-serif; font-size: 13px; }
+    .dash { fill: #8b949e; font-family: 'Fira Code', monospace, sans-serif; font-size: 13px; }
+  </style>
+
+  <!-- Background -->
+  <rect width="600" height="280" class="terminal-bg" />
+
+  <!-- Window Control Dots -->
+  <circle cx="25" cy="25" r="6" fill="#ff5f56" />
+  <circle cx="45" cy="25" r="6" fill="#ffbd2e" />
+  <circle cx="65" cy="25" r="6" fill="#27c93f" />
+
+  <!-- Tab Title -->
+  <text x="300" y="29" class="header-text" text-anchor="middle">theonlydevrai@SPIT: ~</text>
+
+  <!-- Separator Line -->
+  <line x1="0" y1="48" x2="600" y2="48" class="line" />
+
+  <!-- Terminal Content -->
+  <!-- Command -->
+  <text x="25" y="80" class="cmd">$ neofetch --user theonlydevrai</text>
+  
+  <!-- Username Header -->
+  <text x="25" y="105" class="username">theonlydevrai@spit-mumbai</text>
+  <text x="25" y="120" class="dash">--------------------------</text>
+
+  <!-- System Information Details -->
+  <text x="25" y="145" class="label">University<tspan class="val">:</tspan></text>
+  <text x="130" y="145" class="val">Sardar Patel Institute of Technology</text>
+
+  <text x="25" y="170" class="label">Major     <tspan class="val">:</tspan></text>
+  <text x="130" y="170" class="val">B.Tech in Computer Engineering</text>
+
+  <text x="25" y="195" class="label">Minor     <tspan class="val">:</tspan></text>
+  <text x="130" y="195" class="val">Industrial Internet of Things</text>
+
+  <text x="25" y="220" class="label">Focus     <tspan class="val">:</tspan></text>
+  <text x="130" y="220" class="val">Backend Systems, Concurrency &amp; AI Engineering</text>
+
+  <text x="25" y="245" class="label">Status    <tspan class="val">:</tspan></text>
+  <text x="130" y="245" class="val">Building scalable, distributed applications</text>
+</svg>
