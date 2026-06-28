@@ -1,12 +1,12 @@
-<!-- Header Banner with Corrected Contrast -->
+<!-- Header Banner with High-Contrast Text -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0B3C5D&height=180&section=header&text=Dev%20Rai&fontSize=40&animation=fadeIn&fontColor=FFFFFF" width="100%" />
 </p>
 
-<!-- Dynamic Typing Effect -->
+<!-- Cleaned & Expanded Typing Animation -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Computer+Engineering+@+SPIT,+Mumbai;Distributed+Systems+%26+Backend;AI+%26+ML+Enthusiast;Building+Robust+Software+🚀&font=Fira+Code&center=true&width=500&height=50&color=328CC1&vCenter=true&size=20" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?lines=Computer+Engineering+at+SPIT+Mumbai;Distributed+Systems+and+Backend;AI+and+ML+Enthusiast;Building+Robust+Software&font=Fira+Code&center=true&width=600&height=50&color=328CC1&vCenter=true&size=18" alt="Typing SVG" />
   </a>
 </p>
 
@@ -30,31 +30,9 @@
 
 ### 📟 Initialize dev_rai.sh
 
-<div align="center">
-  <table width="100%" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 6px;">
-    <tr>
-      <td style="padding: 10px; font-family: monospace;">
-        <!-- Window Controls -->
-        <span style="color: #ff5f56; font-size: 18px;">●</span> 
-        <span style="color: #ffbd2e; font-size: 18px;">●</span> 
-        <span style="color: #27c93f; font-size: 18px;">●</span>
-        <span style="color: #8b949e; margin-left: 10px; font-size: 12px;">theonlydevrai@SPIT: ~</span>
-        <hr style="border: 0; border-top: 1px solid #30363d; margin: 10px 0;" />
-        <!-- Console Text -->
-        <pre style="color: #c9d1d9; font-size: 13px; line-height: 1.5; margin: 0;">
-<span style="color: #58a6ff;">$ neofetch --user theonlydevrai</span>
-<span style="color: #ff7b72;"><b>theonlydevrai@spit-mumbai</b></span> 
--------------------------- 
-<span style="color: #79c0ff;"><b>University</b></span>: Sardar Patel Institute of Technology
-<span style="color: #79c0ff;"><b>Major</b></span>     : B.Tech in Computer Engineering
-<span style="color: #79c0ff;"><b>Minor</b></span>     : Industrial Internet of Things
-<span style="color: #79c0ff;"><b>Focus</b></span>     : Backend Systems, Concurrency & AI Engineering
-<span style="color: #79c0ff;"><b>Status</b></span>    : Building scalable, distributed applications
-        </pre>
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img src="terminal.svg" width="600" alt="Dev Rai Terminal System" />
+</p>
 
 ---
 
