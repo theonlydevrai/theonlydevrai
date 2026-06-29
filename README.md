@@ -161,25 +161,28 @@
   </tr>
 </table>
 
-<!-- Subsection 2: Public Speaking, Debate & Quizzing (Vertically stacked images with custom text lines embedded in SVGs) -->
+<!-- Subsection 2: Public Speaking, Debate & Quizzing (Side-by-side layout) -->
 <hr />
-
-<p align="center">
-  <img src="SVG/earphones_rect_case_in.svg" width="40%" alt="Transparent Case Earbuds (In the middle of nothing, find yourself)" />
-</p>
-
-<h3 align="left">🗣️ Public Speaking, Debate &amp; Quizzing</h3>
-<ul>
-  <li><strong>Medalist</strong> | World Scholar’s Cup (Earned 5 Gold Medals &amp; 2 Silver Medals)</li>
-  <li><strong>Winner</strong> | National-Level Quiz Competition</li>
-  <li><strong>Finalist</strong> | Canara Knowledge Champ (National-Level Quiz Competition at Canara Bank)</li>
-  <li><strong>Winner</strong> | More than 10 Elocution Competitions across various levels</li>
-  <li><strong>Winner</strong> | Institute-Level Debate Competitions</li>
-</ul>
-
-<p align="center">
-  <img src="SVG/headset_headphones.svg" width="40%" alt="RGB Headset (A good speaker is a good listener)" />
-</p>
+<table width="100%">
+  <tr>
+    <td width="32%" align="center" valign="middle">
+      <img src="SVG/earphones_rect_case_in.svg" width="95%" alt="Transparent Case Earbuds (In the middle of nothing, find yourself)" />
+    </td>
+    <td width="36%" valign="top">
+      <h3 align="left">🗣️ Public Speaking, Debate &amp; Quizzing</h3>
+      <ul>
+        <li><strong>Medalist</strong> | World Scholar’s Cup (Earned 5 Gold Medals &amp; 2 Silver Medals)</li>
+        <li><strong>Winner</strong> | National-Level Quiz Competition</li>
+        <li><strong>Finalist</strong> | Canara Knowledge Champ (National-Level Quiz Competition at Canara Bank)</li>
+        <li><strong>Winner</strong> | More than 10 Elocution Competitions across various levels</li>
+        <li><strong>Winner</strong> | Institute-Level Debate Competitions</li>
+      </ul>
+    </td>
+    <td width="32%" align="center" valign="middle">
+      <img src="SVG/headset_headphones.svg" width="95%" alt="RGB Headset (A good speaker is a good listener)" />
+    </td>
+  </tr>
+</table>
 
 <table width="100%">
   <!-- Subsection 3: Academic Excellence (Image Left, Text Right) -->
@@ -216,18 +219,23 @@
 <!-- 8. GitHub Stats and Smartwatches (Vertically Aligned) -->
 ## 📊 Telemetry & Workstation Stats
 
-<p align="center">
-  <img src="SVG/smartwatch.svg" width="32%" alt="Circular Smartwatch Vitals" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=theonlydevrai&show_icons=true&theme=tokyonight&hide_border=true" width="70%" alt="GitHub Stats" /><br />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=theonlydevrai&layout=compact&theme=tokyonight&hide_border=true" width="70%" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="SVG/smartwatch_square.svg" width="32%" alt="Square Smartwatch Vitals" />
-</p>
+<table width="100%">
+  <tr>
+    <td width="30%" align="center" valign="middle">
+      <img src="SVG/smartwatch.svg" width="95%" alt="Circular Smartwatch Vitals" />
+    </td>
+    <td width="40%" align="center" valign="middle">
+      <picture>
+        <source srcset="https://github-readme-streak-stats-j8aj.vercel.app/?user=theonlydevrai&background=000000&border=30363d&stroke=ffffff&ring=fe7d37&fire=fe7d37&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true&cache_seconds=60" media="(prefers-color-scheme: dark)" />
+        <source srcset="https://github-readme-streak-stats-j8aj.vercel.app/?user=theonlydevrai&theme=default&cache_seconds=60" media="(prefers-color-scheme: light)" />
+        <img height="180" src="https://github-readme-streak-stats-j8aj.vercel.app/?user=theonlydevrai&theme=default&cache_seconds=60" alt="GitHub Streak" />
+      </picture>
+    </td>
+    <td width="30%" align="center" valign="middle">
+      <img src="SVG/smartwatch_square.svg" width="95%" alt="Square Smartwatch Vitals" />
+    </td>
+  </tr>
+</table>
 
 ---
 
