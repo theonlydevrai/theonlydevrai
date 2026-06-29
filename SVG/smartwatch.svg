@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="350" viewBox="0 0 300 350" fill="none">
+  <style>
+    .strap { fill: #1c1b22; stroke: #2a2833; stroke-width: 1.5; }
+    .bezel { fill: #1e1e2e; stroke: #313244; stroke-width: 3; filter: drop-shadow(0px 8px 8px rgba(0,0,0,0.3)); }
+    .screen { fill: #0a0512; stroke: #ff007f; stroke-width: 1.5; filter: drop-shadow(0px 0px 5px rgba(255, 0, 127, 0.4)); }
+    
+    /* Zoomed-out Screen texts */
+    .time-lbl { font-family: 'Fira Code', monospace; font-size: 18px; fill: #ffffff; font-weight: bold; }
+    .date-lbl { font-family: 'Fira Code', monospace; font-size: 8px; fill: #ff007f; font-weight: bold; letter-spacing: 0.8px; }
+    
+    /* Heart rate ECG line */
+    .ecg-line { stroke: #00f0ff; stroke-width: 1.5; fill: none; filter: drop-shadow(0px 0px 2px #00f0ff); animation: ecg-pulse 1.8s infinite linear; }
+    @keyframes ecg-pulse {
+      0% { stroke-dashoffset: 160; }
+      100% { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <!-- Watch Straps (Vertical) -->
+  <path d="M 110 90 L 110 15 L 190 15 L 190 90 Z" class="strap" />
+  <path d="M 110 260 L 110 335 L 190 335 L 190 260 Z" class="strap" />
+  <line x1="110" y1="50" x2="190" y2="50" stroke="#111" stroke-width="1.5" />
+  <line x1="110" y1="300" x2="190" y2="300" stroke="#111" stroke-width="1.5" />
+
+  <!-- Watch Bezel Case -->
+  <circle cx="150" cy="175" r="88" class="bezel" />
+  <circle cx="150" cy="175" r="80" class="screen" />
+
+  <!-- LCD Screen Display Content -->
+  <!-- Updated date to WED, JAN 26 -->
+  <text x="150" y="130" class="date-lbl" text-anchor="middle">WED, JAN 26</text>
+  <text x="150" y="156" class="time-lbl" text-anchor="middle">18:32:00</text>
+
+  <!-- Shifted Heart Rate ECG Wave display down (Y=210) -->
+  <g transform="translate(110, 206)">
+    <path d="M 0 10 L 15 10 L 20 2 L 23 18 L 27 10 L 40 10 L 44 -2 L 48 22 L 52 10 L 80 10" class="ecg-line" stroke-dasharray="160" />
+    <circle cx="5" cy="10" r="1.5" fill="#ff0055" />
+    <text x="15" y="32" font-family="'Fira Code', monospace" font-size="7" fill="#8b949e">84 BPM</text>
+  </g>
+
+  <!-- Side crown button -->
+  <rect x="236" y="160" width="8" height="30" rx="2" fill="#2d2b38" stroke="#1c1b22" />
+</svg>

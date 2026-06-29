@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450" fill="none">
+  <style>
+    .phone-body { fill: #1e1e2e; stroke: #313244; stroke-width: 3; rx: 28; ry: 28; }
+    .phone-screen { fill: #0a0512; stroke: #ff007f; stroke-width: 1.5; filter: drop-shadow(0px 0px 6px rgba(255, 0, 127, 0.4)); rx: 18; ry: 18; }
+    
+    /* Expanding Dynamic Island Notch */
+    .dynamic-island { fill: #000000; stroke: #1f2335; stroke-width: 1; rx: 12; ry: 12; animation: island-grow 5s infinite ease-in-out; }
+    .island-txt { font-family: 'Fira Code', monospace; font-size: 7.5px; fill: #7ee787; font-weight: bold; text-anchor: middle; animation: text-reveal 5s infinite ease-in-out; }
+    .island-icon { fill: #ff007f; filter: drop-shadow(0 0 2px #ff007f); animation: text-reveal 5s infinite ease-in-out; }
+
+    @keyframes island-grow {
+      0%, 15%, 85%, 100% { width: 80px; height: 20px; x: 110px; }
+      35%, 65% { width: 150px; height: 24px; x: 75px; }
+    }
+    @keyframes text-reveal {
+      0%, 20%, 80%, 100% { opacity: 0; }
+      35%, 65% { opacity: 1; }
+    }
+
+    /* Screen UI elements */
+    .clock-lbl { font-family: 'Fira Code', monospace, sans-serif; font-size: 32px; fill: #ffffff; font-weight: bold; }
+    .date-lbl { font-family: 'Fira Code', monospace; font-size: 10px; fill: #ff007f; font-weight: bold; letter-spacing: 1px; }
+    
+    /* Notification widget */
+    .widget-bg { fill: #12101e; stroke: #313244; stroke-width: 1; rx: 10; ry: 10; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.15)); }
+    .widget-txt { font-family: 'Fira Code', monospace; font-size: 8px; fill: #c9d1d9; }
+  </style>
+
+  <defs>
+    <clipPath id="screen-clip">
+      <rect x="25" y="25" width="250" height="400" rx="18" />
+    </clipPath>
+  </defs>
+
+  <!-- Phone Chassis -->
+  <rect x="15" y="15" width="270" height="420" class="phone-body" />
+  
+  <!-- Screen area -->
+  <rect x="25" y="25" width="250" height="400" class="phone-screen" />
+
+  <g clip-path="url(#screen-clip)">
+    <!-- Lockscreen Clock Widget -->
+    <g transform="translate(150, 120)">
+      <text x="0" y="0" class="clock-lbl" text-anchor="middle">18:32</text>
+      <!-- Date updated to WED, JAN 26 -->
+      <text x="0" y="20" class="date-lbl" text-anchor="middle">WED, JAN 26</text>
+    </g>
+
+    <!-- Glowing Notification Widget: Summon From High Court -->
+    <g transform="translate(45, 240)">
+      <rect width="210" height="52" class="widget-bg" stroke="#ffe600" />
+      <circle cx="24" cy="26" r="10" fill="#ffe600" opacity="0.3" />
+      <!-- Scale balance scales icon -->
+      <path d="M 19 24 L 29 24 M 24 21 L 24 31" stroke="#ffe600" stroke-width="1.2" />
+      <text x="44" y="22" class="widget-txt" font-weight="bold" fill="#ffffff">Summon From High Court</text>
+      <text x="44" y="34" class="widget-txt" font-size="7" fill="#8b949e">Case Ref: HC-2026-08 // Lex Simulacra</text>
+    </g>
+
+    <!-- Glowing Notification Widget: Summon From Supreme Court -->
+    <g transform="translate(45, 305)">
+      <rect width="210" height="52" class="widget-bg" stroke="#ff007f" />
+      <circle cx="24" cy="26" r="10" fill="#ff007f" opacity="0.3" />
+      <path d="M 19 24 L 29 24 M 24 21 L 24 31" stroke="#ff007f" stroke-width="1.2" />
+      <text x="44" y="22" class="widget-txt" font-weight="bold" fill="#ffffff">Summon From Supreme Court</text>
+      <text x="44" y="34" class="widget-txt" font-size="7" fill="#8b949e">Case Ref: SC-2026-12 // Lex Simulacra</text>
+    </g>
+
+    <!-- Expanding Dynamic Island Pill (Lawyer Calling) -->
+    <rect x="110" y="34" width="80" height="20" class="dynamic-island" />
+    <circle cx="95" cy="46" r="3" class="island-icon" />
+    <text x="156" y="49" class="island-txt">Lawyer Calling</text>
+
+    <!-- Lockscreen charging notification line at bottom -->
+    <rect x="100" y="415" width="100" height="4" rx="2" fill="#8b949e" opacity="0.6" />
+  </g>
+</svg>

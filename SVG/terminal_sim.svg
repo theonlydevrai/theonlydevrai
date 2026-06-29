@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" fill="none">
+  <style>
+    .terminal-bg { fill: #1a1b26; stroke: #414868; stroke-width: 1.5; rx: 8; ry: 8; }
+    .header-bar { fill: #1f2335; rx: 8; ry: 8; }
+    .header-text { fill: #a9b1d6; font-family: 'Fira Code', monospace, sans-serif; font-size: 13px; }
+    .line { stroke: #414868; stroke-width: 1; }
+    
+    .term-text {
+      font-family: 'Fira Code', monospace, sans-serif;
+      font-size: 13px;
+      fill: #c0caf5;
+    }
+    
+    .prompt { fill: #7aa2f7; font-weight: bold; }
+    .cmd { fill: #9ece6a; }
+    .system { fill: #bb9af3; }
+    .success { fill: #73daca; }
+    .warning { fill: #e0af68; }
+    .error-text { fill: #f7768e; }
+    .comment { fill: #565f89; }
+
+    /* Animation Sequence */
+    .seq-1 { animation: appear 0.1s forwards; animation-delay: 0.5s; opacity: 0; }
+    .seq-2 { animation: type-1 1.2s steps(30) forwards; animation-delay: 0.8s; }
+    .seq-3 { animation: appear 0.1s forwards; animation-delay: 2.2s; opacity: 0; }
+    .seq-4 { animation: appear 0.1s forwards; animation-delay: 2.8s; opacity: 0; }
+    .seq-5 { animation: appear 0.1s forwards; animation-delay: 3.4s; opacity: 0; }
+    .seq-6 { animation: appear 0.1s forwards; animation-delay: 4.0s; opacity: 0; }
+    .seq-7 { animation: appear 0.1s forwards; animation-delay: 4.8s; opacity: 0; }
+    .seq-8 { animation: appear 0.1s forwards; animation-delay: 5.6s; opacity: 0; }
+    .seq-9 { animation: appear 0.1s forwards; animation-delay: 6.4s; opacity: 0; }
+    .seq-10 { animation: type-2 1.0s steps(25) forwards; animation-delay: 7.2s; }
+
+    @keyframes appear {
+      to { opacity: 1; }
+    }
+
+    /* Clip Path Animations utilizing negative right inset to guarantee no character cutoff */
+    @keyframes type-1 {
+      to { clip-path: inset(0 -20px 0 0); }
+    }
+
+    @keyframes type-2 {
+      to { clip-path: inset(0 -20px 0 0); }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="clip-cmd1">
+      <rect x="0" y="0" width="380" height="20" />
+    </clipPath>
+    <clipPath id="clip-cmd2">
+      <rect x="0" y="0" width="380" height="20" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="300" class="terminal-bg" />
+
+  <!-- Window Header Bar -->
+  <path d="M0,8 Q0,0 8,0 L592,0 Q600,0 600,8 L600,45 L0,45 Z" class="header-bar" />
+
+  <!-- Window Control Dots -->
+  <circle cx="25" cy="22" r="6" fill="#f7768e" />
+  <circle cx="45" cy="22" r="6" fill="#e0af68" />
+  <circle cx="65" cy="22" r="6" fill="#9ece6a" />
+
+  <!-- Tab Title -->
+  <text x="300" y="26" class="header-text" text-anchor="middle">theonlydevrai@SPIT: ~/profile-fetcher</text>
+
+  <!-- Separator Line -->
+  <line x1="0" y1="45" x2="600" y2="45" class="line" />
+
+  <!-- Terminal Content (Cursors Removed, command X set by user) -->
+  <g class="term-text" transform="translate(25, 75)">
+    <!-- Prompt Line 1 -->
+    <g class="seq-1">
+      <text x="0" y="0" class="prompt">theonlydevrai@spit:~$</text>
+      <!-- Typed text with clipping -->
+      <text x="160" y="0" class="cmd" clip-path="url(#clip-cmd1)" style="clip-path: inset(0 100% 0 0); animation: type-1 1.2s steps(30) forwards; animation-delay: 0.8s;">git fetch theonlydevrai</text>
+    </g>
+
+    <!-- Execution Logs -->
+    <text x="0" y="25" class="seq-3 comment">Fetching remote head main from Github...</text>
+    <text x="0" y="45" class="seq-4 info">remote: Enumerating objects: 42, done.</text>
+    <text x="0" y="65" class="seq-5 info">remote: Compressing objects: 100% (42/42), done.</text>
+    <text x="0" y="85" class="seq-6 success">✔ All interactive SVG device nodes downloaded [23/23]</text>
+    
+    <text x="0" y="110" class="seq-7 warning">⚡ [STATUS]: ALL DEV DEVICES LOADED SUCCESSFULLY</text>
+    <text x="0" y="130" class="seq-8 success">👉 [ACTION]: Scroll below to explore components...</text>
+    
+    <text x="0" y="155" class="seq-9 comment">Local repository index synchronized with FETCH_HEAD</text>
+    <text x="0" y="175" class="seq-9 success">✔ Cluster ready. Diagnostic consoles operational.</text>
+
+    <!-- Prompt Line 2 -->
+    <g class="seq-9">
+      <text x="0" y="200" class="prompt">theonlydevrai@spit:~$</text>
+      <!-- Typed text 2 with clipping -->
+      <text x="160" y="200" class="cmd" clip-path="url(#clip-cmd2)" style="clip-path: inset(0 100% 0 0); animation: type-2 1.0s steps(25) forwards; animation-delay: 7.2s;">git pull origin main</text>
+    </g>
+  </g>
+</svg>

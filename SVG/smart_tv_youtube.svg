@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="280" viewBox="0 0 450 280" fill="none">
+  <style>
+    .tv-frame { fill: #1c1b22; stroke: #3a3847; stroke-width: 3; rx: 8; ry: 8; }
+    .tv-screen { fill: #0a0512; stroke: #ff007f; stroke-width: 1.5; filter: drop-shadow(0px 0px 6px rgba(255, 0, 127, 0.3)); }
+    .tv-stand { fill: #2d2b38; }
+    
+    /* YouTube Player Components */
+    .player-window { fill: #07090e; stroke: #313244; stroke-width: 1.2; rx: 4; ry: 4; }
+    .seek-bar-bg { fill: #222530; rx: 1.5; ry: 1.5; }
+    .seek-bar-fill { fill: #ff0000; rx: 1.5; ry: 1.5; }
+    .seek-knob { fill: #ff0000; filter: drop-shadow(0 0 2px #ff0000); }
+    
+    /* Playlists */
+    .rec-card { fill: #13121d; stroke: #313244; stroke-width: 0.8; rx: 4; ry: 4; }
+    .txt-primary { font-family: 'Fira Code', monospace, sans-serif; font-size: 8px; fill: #ffffff; font-weight: bold; }
+    .txt-sec { font-family: 'Fira Code', monospace; font-size: 6.5px; fill: #8b949e; }
+    
+    /* Road animation mockup in TV screen */
+    .mini-road { stroke: #00f0ff; stroke-width: 0.8; opacity: 0.5; }
+    .mini-car { fill: #ff007f; }
+  </style>
+
+  <!-- TV Stand -->
+  <polygon points="190,240 260,240 280,265 170,265" class="tv-stand" />
+  <rect x="215" y="225" width="20" height="20" class="tv-stand" />
+
+  <!-- TV Chassis -->
+  <rect x="20" y="20" width="410" height="210" class="tv-frame" />
+  
+  <!-- OLED screen surface -->
+  <rect x="30" y="30" width="390" height="190" class="tv-screen" />
+
+  <!-- YouTube UI Grid -->
+  <!-- Left Side: YouTube Video Player (X=40 to 270, Y=42 to 172) -->
+  <g transform="translate(40, 42)">
+    <rect width="230" height="130" class="player-window" />
+    
+    <!-- Video Content drawing (Simplified synthwave horizon grid) -->
+    <rect x="2" y="2" width="226" height="110" fill="#0b0813" rx="3" />
+    <circle cx="115" cy="80" r="14" fill="#ff7b72" opacity="0.4" />
+    <line x1="115" y1="80" x2="10" y2="110" class="mini-road" />
+    <line x1="115" y1="80" x2="220" y2="110" class="mini-road" />
+    <line x1="115" y1="80" x2="115" y2="110" class="mini-road" stroke-dasharray="2 2" />
+    <rect x="110" y="98" width="10" height="5" rx="1.5" class="mini-car" />
+
+    <!-- Red logo water mark -->
+    <rect x="8" y="8" width="16" height="10" rx="2" fill="#ff0000" />
+    <polygon points="15,11 15,15 19,13" fill="#ffffff" />
+    <text x="28" y="16" font-family="'Fira Code', monospace" font-size="6" fill="#ffffff" font-weight="bold">YouTube</text>
+
+    <!-- Seeker Slider Bar -->
+    <rect x="10" y="118" width="210" height="3" class="seek-bar-bg" />
+    <rect x="10" y="118" width="140" height="3" class="seek-bar-fill" />
+    <circle cx="150" cy="119.5" r="3.5" class="seek-knob" />
+
+    <!-- Play/Pause indicators -->
+    <polygon points="12,125 12,129 16,127" fill="#ffffff" />
+    <text x="24" y="129" class="txt-sec" font-size="5.5">14:02 / 18:32</text>
+  </g>
+
+  <!-- Right Side: Recommendations Playlist Sidebar (X=282 to 410) -->
+  <!-- Card 1 -->
+  <g transform="translate(282, 42)">
+    <rect width="128" height="38" class="rec-card" />
+    <rect x="6" y="5" width="40" height="28" fill="#1f2335" rx="2" />
+    <text x="52" y="14" class="txt-primary">consensus.sh</text>
+    <text x="52" y="24" class="txt-sec">dev_rai // 24k views</text>
+    <text x="52" y="32" class="txt-sec" fill="#00f0ff">Duration: 10:12</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(282, 88)">
+    <rect width="128" height="38" class="rec-card" />
+    <rect x="6" y="5" width="40" height="28" fill="#1f2335" rx="2" />
+    <text x="52" y="14" class="txt-primary">court_sim.py</text>
+    <text x="52" y="24" class="txt-sec">dev_rai // 18k views</text>
+    <text x="52" y="32" class="txt-sec" fill="#00f0ff">Duration: 14:32</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(282, 134)">
+    <rect width="128" height="38" class="rec-card" />
+    <rect x="6" y="5" width="40" height="28" fill="#1f2335" rx="2" />
+    <text x="52" y="14" class="txt-primary">raft_model.mov</text>
+    <text x="52" y="24" class="txt-sec">dev_rai // 9k views</text>
+    <text x="52" y="32" class="txt-sec" fill="#00f0ff">Duration: 8:45</text>
+  </g>
+
+  <!-- Bottom: Video Details Row -->
+  <g transform="translate(40, 185)">
+    <text x="0" y="12" class="txt-primary" font-size="9">DEV_RAI:~$ ./run_consensus_cluster --leader=active</text>
+    <text x="0" y="24" class="txt-sec" font-size="7">Streaming Live from SPIT Laboratory // Port 8080</text>
+  </g>
+</svg>

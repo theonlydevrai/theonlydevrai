@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" fill="none">
+  <style>
+    .headband-base { fill: none; stroke: #1e1e2e; stroke-width: 14; stroke-linecap: round; }
+    .earcup { fill: #11111b; stroke: #313244; stroke-width: 2; }
+    .cushion { fill: #1c1b22; stroke: #2a2833; stroke-width: 0.8; }
+    
+    /* RGB Glowing Band */
+    .rgb-flow { fill: none; stroke-width: 2.5; stroke-linecap: round; animation: rgb-cycle 4s infinite linear; }
+    @keyframes rgb-cycle {
+      0% { stroke: #ff0055; filter: drop-shadow(0 0 2px #ff0055); }
+      33% { stroke: #00f0ff; filter: drop-shadow(0 0 2px #00f0ff); }
+      66% { stroke: #7ee787; filter: drop-shadow(0 0 2px #7ee787); }
+      100% { stroke: #ff0055; filter: drop-shadow(0 0 2px #ff0055); }
+    }
+
+    /* Soundwave Pulses */
+    .soundwave { stroke: #00f0ff; stroke-width: 2; stroke-linecap: round; fill: none; filter: drop-shadow(0px 0px 3px #00f0ff); animation: pulse-wave 1.5s infinite ease-out; }
+    .soundwave-pink { stroke: #ff007f; filter: drop-shadow(0px 0px 3px #ff007f); animation-delay: 0.75s; }
+    
+    @keyframes pulse-wave {
+      0% { opacity: 0; transform: scale(0.85); transform-origin: center; }
+      50% { opacity: 1; }
+      100% { opacity: 0; transform: scale(1.15); transform-origin: center; }
+    }
+  </style>
+
+  <!-- Soundwave Arcs (Pulsing around earcups) -->
+  <!-- Left waves -->
+  <g class="soundwave">
+    <path d="M 53 140 A 35 35 0 0 0 53 200" />
+    <path d="M 43 130 A 45 45 0 0 0 43 210" stroke-width="1.2" opacity="0.6" />
+  </g>
+  <!-- Right waves -->
+  <g class="soundwave soundwave-pink">
+    <path d="M 247 140 A 35 35 0 0 1 247 200" />
+    <path d="M 257 130 A 45 45 0 0 1 257 210" stroke-width="1.2" opacity="0.6" />
+  </g>
+
+  <!-- Narrower Headband Frame -->
+  <path d="M 85 170 C 85 55, 215 55, 215 170" class="headband-base" />
+  <!-- Neon RGB stripe running on top of headband -->
+  <path d="M 91 165 C 91 65, 209 65, 209 165" class="rgb-flow" />
+
+  <!-- Left Earcup Hanger Assembly (Moved Snugger: X=67) -->
+  <g transform="translate(67, 140)">
+    <rect x="10" y="-18" width="6" height="25" fill="#2d2b38" stroke="#1c1b22" rx="1.5" />
+    <!-- Oval Cushion -->
+    <ellipse cx="23" cy="28" rx="6" ry="32" class="cushion" />
+    <!-- Oval Cup chassis -->
+    <ellipse cx="12" cy="28" rx="14" ry="28" class="earcup" />
+    <!-- Logo Glow -->
+    <circle cx="12" cy="28" r="5" fill="#00f0ff" style="filter: drop-shadow(0 0 2px #00f0ff); opacity: 0.8;" />
+    <path d="M 8 28 H 16" stroke="#111" stroke-width="1" />
+  </g>
+
+  <!-- Right Earcup Hanger Assembly (Moved Snugger: X=199) -->
+  <g transform="translate(199, 140)">
+    <rect x="8" y="-18" width="6" height="25" fill="#2d2b38" stroke="#1c1b22" rx="1.5" />
+    <!-- Oval Cushion -->
+    <ellipse cx="1" cy="28" rx="6" ry="32" class="cushion" />
+    <!-- Oval Cup chassis -->
+    <ellipse cx="12" cy="28" rx="14" ry="28" class="earcup" />
+    <!-- Logo Glow -->
+    <circle cx="12" cy="28" r="5" fill="#ff007f" style="filter: drop-shadow(0 0 2px #ff007f); opacity: 0.8;" />
+    <path d="M 8 28 H 16" stroke="#111" stroke-width="1" />
+  </g>
+
+  <!-- Quote inside SVG in Neon Green -->
+  <text x="150" y="260" font-family="'Fira Code', monospace, sans-serif" font-size="10.5" font-weight="bold" fill="#7ee787" text-anchor="middle" style="filter: drop-shadow(0 0 1.5px #7ee787);">A good speaker is a good listener</text>
+</svg>

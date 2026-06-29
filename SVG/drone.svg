@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350" fill="none">
+  <style>
+    .chassis { fill: #1e1e2e; stroke: #313244; stroke-width: 3; rx: 14; ry: 14; filter: drop-shadow(0px 8px 12px rgba(0,0,0,0.3)); }
+    .arm { stroke: #2a2b36; stroke-width: 7; stroke-linecap: round; }
+    .motor { fill: #11111b; stroke: #ff007f; stroke-width: 1.5; }
+    
+    /* Propellers */
+    .prop-blade { stroke: #c9d1d9; stroke-width: 2.5; stroke-linecap: round; }
+    .prop-blur { fill: #ffffff; opacity: 0.12; }
+    
+    /* Animations */
+    .spin-cw-1 { transform-origin: 90px 90px; animation: spin-cw 0.12s infinite linear; }
+    .spin-cw-2 { transform-origin: 260px 260px; animation: spin-cw 0.12s infinite linear; }
+    
+    .spin-ccw-1 { transform-origin: 260px 90px; animation: spin-ccw 0.12s infinite linear; }
+    .spin-ccw-2 { transform-origin: 90px 260px; animation: spin-ccw 0.12s infinite linear; }
+    
+    @keyframes spin-cw {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spin-ccw {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+
+    .camera-eye { fill: #00f0ff; filter: drop-shadow(0 0 4px #00f0ff); animation: pulse-cam 1s infinite alternate; }
+    @keyframes pulse-cam {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+    
+    .lbl-txt { font-family: 'Fira Code', monospace; font-size: 8px; fill: #8b949e; }
+  </style>
+
+  <!-- Ground Shadow under Drone -->
+  <ellipse cx="175" cy="300" rx="90" ry="12" fill="rgba(0,0,0,0.15)" filter="blur(6px)" />
+
+  <!-- Four Propeller Arms (Spanning outwards from 175,175) -->
+  <line x1="175" y1="175" x2="90" y2="90" class="arm" />
+  <line x1="175" y1="175" x2="260" y2="90" class="arm" />
+  <line x1="175" y1="175" x2="90" y2="260" class="arm" />
+  <line x1="175" y1="175" x2="260" y2="260" class="arm" />
+
+  <!-- Neon highlights on arms -->
+  <line x1="175" y1="175" x2="110" y2="110" stroke="#00f0ff" stroke-width="1.5" opacity="0.6" />
+  <line x1="175" y1="175" x2="240" y2="110" stroke="#ff007f" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Motor Pods at the ends of arms -->
+  <circle cx="90" cy="90" r="10" class="motor" />
+  <circle cx="260" cy="90" r="10" class="motor" />
+  <circle cx="90" cy="260" r="10" class="motor" />
+  <circle cx="260" cy="260" r="10" class="motor" />
+
+  <!-- Propeller Blades with High-Speed Blur (CW / CCW animation) -->
+  <!-- Top Left Propeller (CW) -->
+  <g class="spin-cw-1">
+    <ellipse cx="90" cy="90" rx="42" ry="7" class="prop-blur" />
+    <line x1="50" y1="90" x2="130" y2="90" class="prop-blade" />
+    <circle cx="90" cy="90" r="2.5" fill="#ff0055" />
+  </g>
+
+  <!-- Top Right Propeller (CCW) -->
+  <g class="spin-ccw-1">
+    <ellipse cx="260" cy="90" rx="42" ry="7" class="prop-blur" />
+    <line x1="220" y1="90" x2="300" y2="90" class="prop-blade" />
+    <circle cx="260" cy="90" r="2.5" fill="#00f0ff" />
+  </g>
+
+  <!-- Bottom Left Propeller (CCW) -->
+  <g class="spin-ccw-2">
+    <ellipse cx="90" cy="260" rx="42" ry="7" class="prop-blur" />
+    <line x1="50" y1="260" x2="130" y2="260" class="prop-blade" />
+    <circle cx="90" cy="260" r="2.5" fill="#00f0ff" />
+  </g>
+
+  <!-- Bottom Right Propeller (CW) -->
+  <g class="spin-cw-2">
+    <ellipse cx="260" cy="260" rx="42" ry="7" class="prop-blur" />
+    <line x1="220" y1="260" x2="300" y2="260" class="prop-blade" />
+    <circle cx="260" cy="260" r="2.5" fill="#ff0055" />
+  </g>
+
+  <!-- Drone Capsule Center Body -->
+  <rect x="135" y="135" width="80" height="80" class="chassis" />
+  <rect x="142" y="142" width="66" height="66" fill="#0d0f14" rx="10" />
+
+  <!-- Camera Gimbal & Glowing Lens Sensor -->
+  <circle cx="175" cy="175" r="18" fill="#111" stroke="#313244" stroke-width="2" />
+  <circle cx="175" cy="175" r="10" fill="#000" />
+  <circle cx="175" cy="175" r="5" class="camera-eye" />
+  <circle cx="173" cy="173" r="1.5" fill="#ffffff" opacity="0.6" />
+
+  <!-- Status indicators -->
+  <rect x="155" y="195" width="40" height="6" rx="1" fill="#1e1e2e" />
+  <text x="175" y="200" class="lbl-txt" text-anchor="middle" font-size="5">GPS LOCK</text>
+</svg>

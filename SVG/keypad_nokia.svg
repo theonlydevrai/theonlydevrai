@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450" fill="none">
+  <style>
+    .nokia-body { fill: #2b394a; stroke: #1b2530; stroke-width: 3; rx: 36; ry: 36; }
+    .nokia-bezel { fill: #c9d1d9; rx: 20; ry: 20; }
+    .nokia-screen { fill: #8da388; stroke: #5c6e59; stroke-width: 2; rx: 4; ry: 4; }
+    
+    /* Text and pixels */
+    .lcd-text { font-family: 'Courier New', monospace; font-size: 10px; fill: #1c261b; font-weight: bold; }
+    .pixel-snake { fill: #1c261b; }
+    
+    /* Animations */
+    .snake-group { animation: crawl-and-eat 6s infinite ease-in-out; }
+    .pixel-food { fill: #1c261b; animation: food-disappear 6s infinite step-end; }
+    .tail-new { fill: #1c261b; animation: tail-grow 6s infinite step-end; }
+
+    @keyframes crawl-and-eat {
+      0% { transform: translate(0px, 0px); }
+      40% { transform: translate(40px, 0px); } /* Head reaches dot */
+      50% { transform: translate(40px, 0px); } /* Pauses while eating */
+      80% { transform: translate(40px, -24px); } /* Crawls upwards */
+      100% { transform: translate(40px, -24px); }
+    }
+    @keyframes food-disappear {
+      0%, 40% { opacity: 1; }
+      41%, 100% { opacity: 0; }
+    }
+    @keyframes tail-grow {
+      0%, 45% { opacity: 0; }
+      46%, 100% { opacity: 1; }
+    }
+
+    /* Key buttons */
+    .button-nav { fill: #a5b5c5; stroke: #6e7f90; stroke-width: 1; rx: 6; ry: 6; }
+    .button-key { fill: #c9d1d9; stroke: #8b949e; stroke-width: 1; rx: 4; ry: 4; }
+    .button-lbl { fill: #1c261b; font-family: 'Fira Code', monospace, sans-serif; font-size: 8px; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <!-- Phone Body -->
+  <rect x="25" y="15" width="250" height="420" class="nokia-body" />
+  
+  <!-- Light grey screen frame bezel -->
+  <path d="M 50 40 L 250 40 L 240 180 L 60 180 Z" class="nokia-bezel" />
+
+  <!-- LCD Screen -->
+  <rect x="75" y="60" width="150" height="95" class="nokia-screen" />
+
+  <!-- LCD Game Screen contents -->
+  <text x="82" y="75" class="lcd-text">SCORE: 124</text>
+  
+  <g clip-path="url(#lcd-clip)" transform="translate(0, 0)">
+    <!-- Food dot positioned at X=157, Y=116 -->
+    <rect x="157" y="116" width="6" height="6" class="pixel-food" />
+
+    <!-- Animated Snake Body Group -->
+    <g class="snake-group">
+      <!-- Normal body segments -->
+      <rect x="85" y="116" width="8" height="8" class="pixel-snake" />
+      <rect x="93" y="116" width="8" height="8" class="pixel-snake" />
+      <rect x="101" y="116" width="8" height="8" class="pixel-snake" />
+      <rect x="109" y="116" width="8" height="8" class="pixel-snake" />
+      <!-- Snake Head -->
+      <rect x="117" y="116" width="8" height="8" class="pixel-snake" stroke="#8da388" stroke-width="1" />
+      
+      <!-- New tail segment that pops up after eating -->
+      <rect x="77" y="116" width="8" height="8" class="tail-new" />
+    </g>
+  </g>
+
+  <!-- Keypad Navigation Buttons -->
+  <!-- Center scroll bar -->
+  <rect x="130" y="195" width="40" height="24" class="button-nav" />
+  <!-- Left/Right soft keys -->
+  <rect x="65" y="200" width="40" height="15" class="button-nav" />
+  <rect x="195" y="200" width="40" height="15" class="button-nav" />
+
+  <!-- Keypad Numeric Grid -->
+  <!-- Row 1 -->
+  <g transform="translate(60, 235)">
+    <rect x="0" y="0" width="45" height="26" class="button-key" />
+    <text x="22.5" y="16" class="button-lbl">1</text>
+    
+    <rect x="65" y="0" width="50" height="26" class="button-key" />
+    <text x="90" y="16" class="button-lbl">2 abc</text>
+    
+    <rect x="135" y="0" width="45" height="26" class="button-key" />
+    <text x="157.5" y="16" class="button-lbl">3 def</text>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(60, 275)">
+    <rect x="0" y="0" width="45" height="26" class="button-key" />
+    <text x="22.5" y="16" class="button-lbl">4 ghi</text>
+    
+    <rect x="65" y="0" width="50" height="26" class="button-key" />
+    <text x="90" y="16" class="button-lbl">5 jkl</text>
+    
+    <rect x="135" y="0" width="45" height="26" class="button-key" />
+    <text x="157.5" y="16" class="button-lbl">6 mno</text>
+  </g>
+  <!-- Row 3 -->
+  <g transform="translate(60, 315)">
+    <rect x="0" y="0" width="45" height="26" class="button-key" />
+    <text x="22.5" y="16" class="button-lbl">7 pqrs</text>
+    
+    <rect x="65" y="0" width="50" height="26" class="button-key" />
+    <text x="90" y="16" class="button-lbl">8 tuv</text>
+    
+    <rect x="135" y="0" width="45" height="26" class="button-key" />
+    <text x="157.5" y="16" class="button-lbl">9 wxyz</text>
+  </g>
+  <!-- Row 4 -->
+  <g transform="translate(60, 355)">
+    <rect x="0" y="0" width="45" height="26" class="button-key" />
+    <text x="22.5" y="16" class="button-lbl">*</text>
+    
+    <rect x="65" y="0" width="50" height="26" class="button-key" />
+    <text x="90" y="16" class="button-lbl">0</text>
+    
+    <rect x="135" y="0" width="45" height="26" class="button-key" />
+    <text x="157.5" y="16" class="button-lbl">#</text>
+  </g>
+
+  <!-- Nokia Logo -->
+  <text x="150" y="173" font-family="Helvetica, sans-serif" font-size="9" fill="#1b2530" font-weight="bold" letter-spacing="1.5" text-anchor="middle">NOKIA</text>
+</svg>

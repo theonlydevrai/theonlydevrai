@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="480" viewBox="0 0 450 480" fill="none">
+  <style>
+    .body-outer { fill: #1d1b26; stroke: #39354f; stroke-width: 3; rx: 20; ry: 20; }
+    .body-inner { fill: #282436; rx: 12; ry: 12; }
+    
+    /* Neon accents */
+    .neon-cyan { filter: drop-shadow(0px 0px 4px #00f0ff); fill: #00f0ff; }
+    .neon-magenta { filter: drop-shadow(0px 0px 4px #ff007f); fill: #ff007f; }
+    .neon-purple { stroke: #bd00ff; }
+
+    /* Screen Elements */
+    .screen-bezel { fill: #131218; stroke: #2a2833; stroke-width: 2; rx: 10; ry: 10; }
+    .screen-glass { fill: #07090e; stroke: #1f2335; stroke-width: 1.5; rx: 4; ry: 4; }
+    .screen-glow { filter: drop-shadow(0px 0px 8px rgba(0, 240, 255, 0.3)); }
+    .power-led { fill: #39000a; }
+    .power-on { fill: #ff0055; filter: drop-shadow(0px 0px 3px #ff0055); animation: led-glow 2s infinite alternate; }
+
+    /* Text Style */
+    .crt-text { font-family: 'Fira Code', monospace, sans-serif; font-size: 10px; fill: #00f0ff; }
+    .crt-title { font-family: 'Press Start 2P', 'Fira Code', monospace; font-size: 12px; font-weight: bold; fill: #ff007f; }
+    .crt-prompt { fill: #7ee787; }
+    .crt-border { fill: #8b949e; }
+    
+    /* D-PAD and Buttons */
+    .dpad-bg { fill: #131218; rx: 4; ry: 4; }
+    .dpad-cross { fill: #312e3b; stroke: #1a1921; stroke-width: 1; }
+    .btn-red { fill: #ff0055; stroke: #9e0031; stroke-width: 1.5; filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.4)); }
+    .btn-blue { fill: #00f0ff; stroke: #008fa8; stroke-width: 1.5; filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.4)); }
+    .btn-pill { fill: #312e3b; stroke: #1a1921; rx: 3; ry: 3; }
+    
+    .speaker-slot { stroke: #131218; stroke-width: 3; stroke-linecap: round; }
+    .console-logo { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 8px; font-weight: bold; letter-spacing: 2px; }
+
+    @keyframes led-glow {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <!-- Outer Console Chassis Shadow -->
+  <rect x="15" y="15" width="420" height="450" rx="20" fill="rgba(0,0,0,0.25)" filter="blur(8px)" />
+
+  <!-- Outer Console Chassis -->
+  <rect x="10" y="10" width="430" height="460" class="body-outer" />
+  
+  <!-- Inner Border Line -->
+  <rect x="20" y="20" width="410" height="440" fill="none" class="neon-purple" stroke-width="1" rx="16" ry="16" />
+
+  <!-- Screen Bezel -->
+  <rect x="35" y="35" width="380" height="210" class="screen-bezel" />
+
+  <!-- Power LED label & Light -->
+  <text x="50" y="143" font-family="'Fira Code', monospace" font-size="8" fill="#8b949e" text-anchor="middle">POWER</text>
+  <circle cx="50" cy="125" r="4.5" class="power-led" />
+  <circle cx="50" cy="125" r="4.5" class="power-on" />
+
+  <!-- Screen Glass Area -->
+  <rect x="75" y="50" width="315" height="180" class="screen-glass screen-glow" />
+
+  <!-- CRT Screen Contents -->
+  <g class="crt-text">
+    <text x="90" y="75" class="crt-title">SQL CONSOLE v1.0</text>
+
+    <!-- SQL Prompt and Query -->
+    <text x="90" y="102" class="crt-prompt">mysql&gt; <tspan fill="#ffffff">SELECT * FROM dev_bio;</tspan></text>
+    
+    <!-- Table outputs -->
+    <text x="90" y="118" class="crt-border">+----+--------+-------------+</text>
+    <text x="90" y="132"><tspan class="crt-border">|</tspan> ID <tspan class="crt-border">|</tspan> NAME   <tspan class="crt-border">|</tspan> ROLE        <tspan class="crt-border">|</tspan></text>
+    <text x="90" y="146" class="crt-border">+----+--------+-------------+</text>
+    <text x="90" y="160"><tspan class="crt-border">|</tspan> 24 <tspan class="crt-border">|</tspan> DevRai <tspan class="crt-border">|</tspan> Systems_Eng <tspan class="crt-border">|</tspan></text>
+    <text x="90" y="174" class="crt-border">+----+--------+-------------+</text>
+    
+    <text x="90" y="192" fill="#7ee787">1 row in set (0.001 sec)</text>
+    <text x="90" y="208" class="crt-prompt">mysql&gt; <tspan fill="#ffffff" class="flicker">_</tspan></text>
+  </g>
+
+  <!-- Console Screen Bottom Subtext -->
+  <text x="225" y="235" class="console-logo" text-anchor="middle">DATABASE READY</text>
+
+  <!-- Bottom Panel Controls -->
+  <!-- D-PAD -->
+  <g transform="translate(60, 275)">
+    <rect x="0" y="0" width="80" height="80" class="dpad-bg" />
+    
+    <!-- Cross vertical and horizontal -->
+    <rect x="28" y="8" width="24" height="64" rx="2" class="dpad-cross" />
+    <rect x="8" y="28" width="64" height="24" rx="2" class="dpad-cross" />
+    <!-- Center circle marker -->
+    <circle cx="40" cy="40" r="5" fill="#131218" />
+  </g>
+
+  <!-- A / B Buttons -->
+  <g transform="translate(280, 290)">
+    <!-- B Button -->
+    <circle cx="35" cy="50" r="18" class="btn-blue" />
+    <text x="35" y="54" font-family="'Fira Code', monospace" font-weight="bold" font-size="12" fill="#1d1b26" text-anchor="middle">B</text>
+
+    <!-- A Button -->
+    <circle cx="85" cy="25" r="18" class="btn-red" />
+    <text x="85" y="29" font-family="'Fira Code', monospace" font-weight="bold" font-size="12" fill="#1d1b26" text-anchor="middle">A</text>
+  </g>
+
+  <!-- Select / Start Pill Buttons -->
+  <g transform="translate(160, 395)">
+    <!-- Select -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="45" height="12" class="btn-pill" transform="rotate(-25)" />
+      <text x="5" y="25" font-family="'Fira Code', monospace" font-size="8" fill="#8b949e">SELECT</text>
+    </g>
+    <!-- Start -->
+    <g transform="translate(65, 0)">
+      <rect x="0" y="0" width="45" height="12" class="btn-pill" transform="rotate(-25)" />
+      <text x="8" y="25" font-family="'Fira Code', monospace" font-size="8" fill="#8b949e">START</text>
+    </g>
+  </g>
+
+  <!-- Speaker Grill Grates -->
+  <g transform="translate(345, 390)">
+    <line x1="0" y1="30" x2="25" y2="0" class="speaker-slot" />
+    <line x1="10" y1="35" x2="35" y2="5" class="speaker-slot" />
+    <line x1="20" y1="40" x2="45" y2="10" class="speaker-slot" />
+    <line x1="30" y1="45" x2="55" y2="15" class="speaker-slot" />
+  </g>
+</svg>

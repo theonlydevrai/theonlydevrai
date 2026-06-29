@@ -1,139 +1,244 @@
-<!-- Header Banner with High-Contrast Text -->
+<!-- 1. desktoprig on top most (No Section Header) -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=9800cb&height=180&section=header&text=Dev%20Rai&fontSize=40&animation=fadeIn&fontColor=FFFFFF&fontFamily=Fira%20Code" width="100%" />
+  <img src="SVG/desktop_rig.svg" width="98%" alt="Dev Rai Master Workstation" />
 </p>
 
-<!-- Cleaned & Expanded Typing Animation -->
+<!-- 2. terminal_sim.svg (Welcome To my workstation Header right after) -->
+## 📟 Welcome To My Workstation
+
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Computer+Engineering+at+SPIT+Mumbai;Distributed+Systems+and+Backend;AI+and+ML+Enthusiast;Building+Robust+Software&font=Fira+Code&center=true&width=600&height=50&color=be00ff&vCenter=true&size=18" alt="Typing SVG" />
-  </a>
+  <img src="SVG/terminal_sim.svg" width="98%" alt="Command Console Initializer" />
 </p>
 
-<!-- Social & Contact Grid -->
+<!-- 3. smart_tv_apps.svg & Connect with me Header -->
+## 📺 Connect With Me
+
+<p align="center">
+  <img src="SVG/smart_tv_apps.svg" width="85%" alt="Smart TV Social App Launcher" />
+</p>
+
 <p align="center">
   <a href="mailto:dev.rai24@spit.ac.in">
-    <img src="https://img.shields.io/badge/Email-dev.rai24@spit.ac.in-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="SVG/gmail-svgrepo-com.svg" width="48" height="48" alt="Gmail" />
   </a>
   <a href="https://linkedin.com/in/theonlydevrai" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-theonlydevrai-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="SVG/linkedin-svgrepo-com.svg" width="48" height="48" alt="LinkedIn" />
   </a>
   <a href="https://instagram.com/theonlydevrai" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-theonlydevrai-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+    <img src="SVG/instagram-2-1-logo-svgrepo-com.svg" width="48" height="48" alt="Instagram" />
   </a>
   <a href="https://x.com/theonlydevrai" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter%20%2F%20X-theonlydevrai-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+    <img src="SVG/x-logo.svg" width="48" height="48" alt="Twitter / X" />
   </a>
 </p>
 
 ---
 
-### 📟 Initialize dev_rai.sh
+<!-- 4. laptop_header.svg under About Me (No paragraphs) -->
+## 👨‍💻 About Me
 
 <p align="center">
-  <img src="terminal.svg" width="600" alt="Dev Rai Terminal System" />
+  <img src="SVG/laptop_header.svg" width="98%" alt="Laptop Bio Station" />
 </p>
 
 ---
 
-### 👨‍💻 About Me
+<!-- 5. Tech Skills -->
+## 🛠️ Technical Skills
 
-I am a **Computer Engineering student** at **Sardar Patel Institute of Technology (SPIT), Mumbai**. My engineering focus lies primarily on constructing reliable backend architectures, designing high-throughput distributed systems, and utilizing modern artificial intelligence frameworks.
+### A. Languages
+<p align="center">
+  <img src="SVG/nintendo_switch.svg" width="70%" alt="Nintendo Switch Languages Selector" />
+</p>
 
-- 🎓 Pursuing a **B.Tech in Computer Engineering** with an **IIoT Minor**.
-- ⚡ Focused on clean architectural patterns, concurrency safety, and database optimization.
-- 🧠 Actively researching and designing multi-agent LLM pipelines and robust natural language processing utilities.
+<p align="center">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+</p>
+
+### B. Frameworks & Libraries
+<p align="center">
+  <img src="SVG/racing_wheel_setup.svg" width="70%" alt="Racecar Speedometer Cockpit" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+</p>
+
+### C. Databases
+<p align="center">
+  <img src="SVG/retro_console.svg" width="55%" alt="Retro Console Databases Selector" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+</p>
+
+### D. Developer Tools
+<p align="center">
+  <img src="SVG/keypad_nokia.svg" width="40%" alt="Nokia Keypad Environment" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
+  <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible" />
+  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
+</p>
 
 ---
 
-### 🛠️ Technical Skills
+<!-- 6. TECH PROJECTS -->
+## 📁 Technical Projects
 
-<div align="center">
+### A. Distributed Event Ticketing Platform
+<p align="center">
+  <img src="SVG/smartphone.svg" width="40%" alt="Smartphone Ticket Booking Messages" />
+</p>
 
-#### 🔤 Languages
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-#### ⚙️ Frameworks & Libraries
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-
-#### 🗄️ Databases
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-#### 🔧 Developer Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-
-</div>
-
----
-
-### 📁 Technical Projects
-
-#### 🎫 [Distributed Event Ticketing Platform](https://github.com/theonlydevrai/tms)
 * **Tech Stack:** React, TypeScript, Node.js, Express, MySQL, Redis, BullMQ
 * A high-performance, fault-tolerant movie ticket booking system built to handle heavy concurrency during high-demand periods. 
 * Integrates primary-backup replication, ring leader election (Chang-Roberts), Lamport logical clocks for conflict resolution, round-robin load balancing, and a multi-threaded background worker pool.
 
-#### ⚖️ [Lex Simulacra: An AI Courtroom Simulator](https://github.com/prasad-gade05/Law_Courtroom_Simulator)
+### B. Lex Simulacra: An AI Courtroom Simulator
+<!-- Vertically Aligned: Phone 1 (Notch) -> Description -> Phone 2 (Retro) -->
+<p align="center">
+  <img src="SVG/smartphone_notch.svg" width="40%" alt="Notch Phone Summon View" />
+</p>
+
 * **Tech Stack:** Python, FastAPI, LangGraph, LangChain, ChromaDB
 * An AI-powered legal courtroom simulation platform modeling realistic trial proceedings.
 * Employs stateful multi-agent workflows managed with LangGraph. Features an advanced legal RAG pipeline with ChromaDB vector storage, citation enforcement, hallucination verification layers, and web search integrations.
 
-#### 🧠 [Unified NLP Trust Tool](https://github.com/theonlydevrai/unified-nlp-trust-tool)
+<p align="center">
+  <img src="SVG/smartphone_retro.svg" width="40%" alt="Retro Slider Phone Input View" />
+</p>
+
+### C. Unified NLP Trust Tool
+<p align="center">
+  <img src="SVG/smartphone_foldable.svg" width="45%" alt="Smartphone Foldable Reviews Classification" />
+</p>
+
 * **Tech Stack:** Python, Flask, JavaScript, scikit-learn, PyTorch
 * A unified, multi-task NLP pipeline designed to protect digital consumers.
 * Performs sentence-level legal risk detection in Terms & Conditions, filters out fake reviews, and conducts aspect-based sentiment analysis (ABSA). Features a helper Google Chrome extension to scrape DOM content directly and bypass rate-limiting blocks.
 
 ---
 
-### 🏆 Achievements & Honors
+<!-- 7. Achievements & Honors (Zig-Zag / Stacked) -->
+## 🏆 Achievements & Honors
 
-#### 💻 Technical & Hackathons
-* **Winner** | State-Level MSBTE Project Competition
-* **Winner** | Makerthon Project Competition
-* **Two-time Winner** | State-Level Technical Paper Presentation
+<table width="100%">
+  <!-- Subsection 1: Technical & Hackathons (Image Left, Text Right) -->
+  <tr>
+    <td width="45%" align="center" valign="middle">
+      <img src="SVG/drone.svg" width="95%" alt="Drone Telemetry Controller" />
+    </td>
+    <td width="55%" valign="top">
+      <h3>💻 Technical &amp; Hackathons</h3>
+      <ul>
+        <li><strong>Winner</strong> | State-Level MSBTE Project Competition</li>
+        <li><strong>Winner</strong> | Makerthon Project Competition</li>
+        <li><strong>Two-time Winner</strong> | State-Level Technical Paper Presentation</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-#### 🗣️ Public Speaking, Debate & Quizzing
-* **Medalist** | World Scholar’s Cup (Earned 5 Gold Medals & 2 Silver Medals)
-* **Winner** | National-Level Quiz Competition
-* **Finalist** | Canara Knowledge Champ (National-Level Quiz Competition at Canara Bank)
-* **Winner** | More than 10 Elocution Competitions across various levels
-* **Winner** | Institute-Level Debate Competitions
+<!-- Subsection 2: Public Speaking, Debate & Quizzing (Vertically stacked images with custom text lines embedded in SVGs) -->
+<hr />
 
-#### 🎓 Academic Excellence
-* **Academic Topper** | Secured the top rank for all semesters during Diploma in Computer Technology.
-* **Best Student Award** | Recipient of the overall best student honor at the institute level.
+<p align="center">
+  <img src="SVG/earphones_rect_case_in.svg" width="40%" alt="Transparent Case Earbuds (In the middle of nothing, find yourself)" />
+</p>
+
+<h3 align="left">🗣️ Public Speaking, Debate &amp; Quizzing</h3>
+<ul>
+  <li><strong>Medalist</strong> | World Scholar’s Cup (Earned 5 Gold Medals &amp; 2 Silver Medals)</li>
+  <li><strong>Winner</strong> | National-Level Quiz Competition</li>
+  <li><strong>Finalist</strong> | Canara Knowledge Champ (National-Level Quiz Competition at Canara Bank)</li>
+  <li><strong>Winner</strong> | More than 10 Elocution Competitions across various levels</li>
+  <li><strong>Winner</strong> | Institute-Level Debate Competitions</li>
+</ul>
+
+<p align="center">
+  <img src="SVG/headset_headphones.svg" width="40%" alt="RGB Headset (A good speaker is a good listener)" />
+</p>
+
+<table width="100%">
+  <!-- Subsection 3: Academic Excellence (Image Left, Text Right) -->
+  <tr>
+    <td width="45%" align="center" valign="middle">
+      <img src="SVG/keyboard_mechanical.svg" width="100%" alt="Mechanical Keyboard Backlight Grid" />
+    </td>
+    <td width="55%" valign="top">
+      <h3>🎓 Academic Excellence</h3>
+      <ul>
+        <li><strong>Academic Topper</strong> | Secured the top rank for all semesters during Diploma in Computer Technology.</li>
+        <li><strong>Best Student Award</strong> | Recipient of the overall best student honor at the institute level.</li>
+      </ul>
+    </td>
+  </tr>
+  
+  <!-- Subsection 4: Leadership & Positions of Responsibility (Text Left, Image Right) -->
+  <tr>
+    <td width="55%" valign="top">
+      <h3>🤝 Leadership &amp; Positions of Responsibility</h3>
+      <ul>
+        <li>📌 <strong>Head of Public Relations</strong> | ENACTUS - SPIT</li>
+        <li>📌 <strong>Elected Prime Minister</strong> | Student Council, SJHS</li>
+      </ul>
+    </td>
+    <td width="45%" align="center" valign="middle">
+      <img src="SVG/gamepad.svg" width="85%" alt="Gamepad Event Controller" />
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 🤝 Leadership & Positions of Responsibility
+<!-- 8. GitHub Stats and Smartwatches (Vertically Aligned) -->
+## 📊 Telemetry & Workstation Stats
 
-* 📌 **Head of Public Relations** | ENACTUS - SPIT
-* 📌 **Elected Prime Minister** | Student Council, SJHS
+<p align="center">
+  <img src="SVG/smartwatch.svg" width="32%" alt="Circular Smartwatch Vitals" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=theonlydevrai&show_icons=true&theme=tokyonight&hide_border=true" width="70%" alt="GitHub Stats" /><br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=theonlydevrai&layout=compact&theme=tokyonight&hide_border=true" width="70%" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="SVG/smartwatch_square.svg" width="32%" alt="Square Smartwatch Vitals" />
+</p>
 
 ---
 
-### ☕ Compiled Thoughts
+<!-- 9. A Thought Worth Looking Into (Vertically Aligned, Larger VR SVG) -->
+## 🧠 A Thought Worth Looking Into
+
+<p align="center">
+  <img src="SVG/vr_headset.svg" width="75%" alt="VR Headset Vision" />
+</p>
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dynamic Programming Quote" />
 </p>
+

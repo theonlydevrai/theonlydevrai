@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="280" viewBox="0 0 450 280" fill="none">
+  <style>
+    .tv-frame { fill: #1c1b22; stroke: #3a3847; stroke-width: 3; rx: 8; ry: 8; }
+    .tv-screen { fill: #0a0512; stroke: #00f0ff; stroke-width: 1.5; filter: drop-shadow(0px 0px 6px rgba(0, 240, 255, 0.3)); }
+    .tv-stand { fill: #2d2b38; }
+    
+    /* UI components */
+    .card { fill: #120c1f; stroke: #ff007f; stroke-width: 1; rx: 4; ry: 4; }
+    .card-txt { font-family: 'Fira Code', monospace, sans-serif; font-size: 8px; fill: #ffffff; }
+    .title-banner { fill: url(#banner-grad); rx: 4; ry: 4; }
+    
+    /* Pulse seek bar */
+    .seek-bar-bg { fill: #151624; rx: 2; ry: 2; }
+    .seek-bar-fill { fill: #00f0ff; rx: 2; ry: 2; animation: load 6s infinite ease-in-out alternate; }
+    
+    @keyframes load {
+      0% { width: 0px; }
+      100% { width: 340px; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="banner-grad" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#67008a" />
+    </linearGradient>
+  </defs>
+
+  <!-- TV Stand -->
+  <polygon points="190,240 260,240 280,265 170,265" class="tv-stand" />
+  <rect x="215" y="225" width="20" height="20" class="tv-stand" />
+
+  <!-- TV Chassis -->
+  <rect x="20" y="20" width="410" height="210" class="tv-frame" />
+  
+  <!-- OLED screen surface -->
+  <rect x="30" y="30" width="390" height="190" class="tv-screen" />
+
+  <!-- Content inside TV screen -->
+  <!-- Featured Billboard -->
+  <rect x="45" y="45" width="360" height="75" class="title-banner" />
+  <text x="60" y="78" font-family="'Press Start 2P', monospace" font-size="12" fill="#ffffff" font-weight="bold">LEX SIMULACRA</text>
+  <text x="60" y="98" font-family="'Fira Code', monospace" font-size="9" fill="#00f0ff">SEASON 1 // MULTI-AGENT COURTROOM ACTIVE</text>
+
+  <!-- Category List -->
+  <text x="45" y="145" font-family="'Fira Code', monospace" font-size="9" fill="#8b949e">RECOMMENDED CLIPS</text>
+
+  <!-- Carousel cards -->
+  <g transform="translate(45, 155)">
+    <!-- Card 1 -->
+    <g>
+      <rect x="0" y="0" width="105" height="35" class="card" />
+      <text x="10" y="15" class="card-txt">node_election.mov</text>
+      <text x="10" y="26" class="card-txt" fill="#ff007f">Duration: 4m 12s</text>
+    </g>
+    <!-- Card 2 -->
+    <g transform="translate(125, 0)">
+      <rect x="0" y="0" width="105" height="35" class="card" />
+      <text x="10" y="15" class="card-txt">vector_rag_run.mp4</text>
+      <text x="10" y="26" class="card-txt" fill="#ff007f">Duration: 8m 45s</text>
+    </g>
+    <!-- Card 3 -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="110" height="35" class="card" />
+      <text x="10" y="15" class="card-txt">lamport_sync.wav</text>
+      <text x="10" y="26" class="card-txt" fill="#ff007f">Duration: 2m 10s</text>
+    </g>
+  </g>
+
+  <!-- Seek Seeker Bar -->
+  <g transform="translate(45, 205)">
+    <rect x="0" y="0" width="360" height="4" class="seek-bar-bg" />
+    <rect x="0" y="0" width="0" height="4" class="seek-bar-fill" />
+  </g>
+</svg>

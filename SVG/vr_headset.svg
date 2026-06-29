@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="240" viewBox="0 0 350 240" fill="none">
+  <style>
+    .bezel-chassis { fill: none; stroke: #8b949e; stroke-width: 3.5; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }
+    .glass-front { fill: url(#glass-grad); stroke: #30363d; stroke-width: 1.5; }
+    
+    /* Ribbed Solo Loop Strap */
+    .ribbed-strap { fill: #2d2b38; stroke: #1c1b22; stroke-width: 1.5; }
+    
+    /* Glowing EyeSight clouds behind glass */
+    .eye-cloud-l { fill: url(#cloud-grad-l); filter: blur(12px); opacity: 0.6; animation: float-eye 4s infinite alternate ease-in-out; }
+    .eye-cloud-r { fill: url(#cloud-grad-r); filter: blur(12px); opacity: 0.6; animation: float-eye 4s infinite alternate ease-in-out; animation-delay: 2s; }
+    
+    @keyframes float-eye {
+      0% { transform: scale(0.9) translate(2px, 0); }
+      100% { transform: scale(1.1) translate(-2px, 0); }
+    }
+
+    /* Reflections on glass */
+    .reflection { fill: #ffffff; opacity: 0.15; }
+  </style>
+
+  <defs>
+    <!-- Front Glass Reflective Gradient -->
+    <linearGradient id="glass-grad" x1="50" y1="60" x2="300" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f0f15" />
+      <stop offset="50%" stop-color="#07080d" />
+      <stop offset="100%" stop-color="#181825" />
+    </linearGradient>
+
+    <!-- Left/Right EyeSight Glowing Gradients -->
+    <radialGradient id="cloud-grad-l" cx="120" cy="120" r="45" fx="120" fy="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    
+    <radialGradient id="cloud-grad-r" cx="230" cy="120" r="45" fx="230" fy="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Apple Ribbed Solo Loop Strap (Rear and sides) -->
+  <!-- We draw horizontal bars to represent the textured fabric -->
+  <path d="M 30 100 L 15 100 C 5 100, 5 70, 5 70" stroke="#1c1b22" stroke-width="14" fill="none" />
+  <path d="M 320 100 L 335 100 C 345 100, 345 70, 345 70" stroke="#1c1b22" stroke-width="14" fill="none" />
+  
+  <rect x="10" y="80" width="26" height="60" class="ribbed-strap" rx="4" />
+  <line x1="10" y1="92" x2="36" y2="92" stroke="#1c1b22" stroke-width="2" />
+  <line x1="10" y1="104" x2="36" y2="104" stroke="#1c1b22" stroke-width="2" />
+  <line x1="10" y1="116" x2="36" y2="116" stroke="#1c1b22" stroke-width="2" />
+  <line x1="10" y1="128" x2="36" y2="128" stroke="#1c1b22" stroke-width="2" />
+
+  <rect x="314" y="80" width="26" height="60" class="ribbed-strap" rx="4" />
+  <line x1="314" y1="92" x2="340" y2="92" stroke="#1c1b22" stroke-width="2" />
+  <line x1="314" y1="104" x2="340" y2="104" stroke="#1c1b22" stroke-width="2" />
+  <line x1="314" y1="116" x2="340" y2="116" stroke="#1c1b22" stroke-width="2" />
+  <line x1="314" y1="128" x2="340" y2="128" stroke="#1c1b22" stroke-width="2" />
+
+  <!-- Visor Back Cushion (Interfacing piece) -->
+  <rect x="42" y="62" width="266" height="126" rx="20" fill="#2d2b38" stroke="#1c1b22" stroke-width="2" />
+
+  <!-- Silver Aluminum Bezel Frame -->
+  <rect x="40" y="60" width="270" height="130" rx="24" class="bezel-chassis" />
+
+  <!-- Front Curved Glass Plate -->
+  <rect x="40" y="60" width="270" height="130" rx="24" class="glass-front" />
+
+  <!-- EyeSight Hologram displays inside glass -->
+  <!-- Left EyeSight Cloud -->
+  <ellipse cx="120" cy="125" rx="40" ry="30" class="eye-cloud-l" />
+  <!-- Right EyeSight Cloud -->
+  <ellipse cx="230" cy="125" rx="40" ry="30" class="eye-cloud-r" />
+
+  <!-- Visual Glass Reflections -->
+  <!-- Top curved light streak -->
+  <path d="M 60 70 Q 175 80 290 70 Q 175 62 60 70 Z" class="reflection" />
+  <!-- Bottom reflection -->
+  <path d="M 70 175 Q 175 168 280 175 Q 175 180 70 175 Z" class="reflection" opacity="0.1" />
+
+  <!-- Audio Pod Speaker details on sides -->
+  <rect x="42" y="110" width="4" height="26" rx="2" fill="#8b949e" />
+  <rect x="304" y="110" width="4" height="26" rx="2" fill="#8b949e" />
+</svg>

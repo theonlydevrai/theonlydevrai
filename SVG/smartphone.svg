@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450" fill="none">
+  <style>
+    .phone-body { fill: #1e1e2e; stroke: #313244; stroke-width: 3; rx: 28; ry: 28; }
+    .phone-screen { fill: #0f0f17; stroke: #ff007f; stroke-width: 1.5; filter: drop-shadow(0px 0px 6px rgba(255, 0, 127, 0.4)); rx: 18; ry: 18; }
+    
+    /* App Icons */
+    .app-icon { rx: 6; ry: 6; width: 32; height: 32; }
+    .icon-blue { fill: #58a6ff; }
+    .icon-green { fill: #7ee787; }
+    .icon-purple { fill: #cba6f7; }
+    .icon-orange { fill: #fab387; }
+    
+    /* Left/Right Pure Horizontal Sequential Animations (No vertical translation) */
+    .msg-left-1 { animation: pop-left 9s infinite ease-in-out; }
+    .msg-right-2 { animation: pop-right 9s infinite ease-in-out; }
+    .msg-left-3 { animation: pop-left-2 9s infinite ease-in-out; }
+    
+    @keyframes pop-left {
+      0%, 10% { opacity: 0; transform: translateX(-15px); }
+      15%, 90% { opacity: 1; transform: translateX(0); }
+      95%, 100% { opacity: 0; }
+    }
+    @keyframes pop-right {
+      0%, 40% { opacity: 0; transform: translateX(15px); }
+      45%, 90% { opacity: 1; transform: translateX(0); }
+      95%, 100% { opacity: 0; }
+    }
+    @keyframes pop-left-2 {
+      0%, 70% { opacity: 0; transform: translateX(-15px); }
+      75%, 90% { opacity: 1; transform: translateX(0); }
+      95%, 100% { opacity: 0; }
+    }
+    
+    .status-bar { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 8px; }
+    .chat-txt { font-family: 'Fira Code', monospace; font-size: 9px; fill: #ffffff; }
+    .chat-bg-sent { fill: #ff007f; opacity: 0.25; rx: 6; ry: 6; }
+    .chat-bg-recv { fill: #24283b; stroke: #3a3847; stroke-width: 0.8; rx: 6; ry: 6; }
+  </style>
+
+  <defs>
+    <!-- Screen boundary clip path -->
+    <clipPath id="screen-clip">
+      <rect x="25" y="25" width="250" height="400" rx="18" />
+    </clipPath>
+  </defs>
+
+  <!-- Smartphone Outer Body -->
+  <rect x="15" y="15" width="270" height="420" class="phone-body" />
+  
+  <!-- Screen Area -->
+  <rect x="25" y="25" width="250" height="400" class="phone-screen" />
+
+  <!-- Content wrapped inside Screen boundary mask -->
+  <g clip-path="url(#screen-clip)">
+    <!-- Speaker slit and Camera at top -->
+    <rect x="120" y="32" width="60" height="4" rx="2" fill="#313244" />
+    <circle cx="105" cy="34" r="3" fill="#00f0ff" />
+
+    <!-- Status Bar -->
+    <text x="38" y="52" class="status-bar">18:32</text>
+    <text x="262" y="52" class="status-bar" text-anchor="end">LTE [███]</text>
+
+    <!-- App Grid Area -->
+    <g transform="translate(42, 70)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" class="app-icon icon-blue" />
+      <rect x="52" y="0" class="app-icon icon-green" />
+      <rect x="104" y="0" class="app-icon icon-purple" />
+      <rect x="156" y="0" class="app-icon icon-orange" />
+      
+      <!-- Row 2 -->
+      <rect x="0" y="44" class="app-icon icon-purple" />
+      <rect x="52" y="44" class="app-icon icon-orange" />
+      <rect x="104" y="44" class="app-icon icon-blue" />
+      <rect x="156" y="44" class="app-icon icon-green" />
+    </g>
+
+    <!-- Chat Messages Area -->
+    <g transform="translate(32, 175)">
+      <!-- Msg 1 (Received - Left, Y=10) -->
+      <g transform="translate(10, 10)">
+        <g class="msg-left-1">
+          <rect x="0" y="0" width="160" height="40" class="chat-bg-recv" />
+          <text x="8" y="14" class="chat-txt" fill="#7ee787">Friends_Group</text> <!-- Green Fill -->
+          <text x="8" y="28" class="chat-txt" font-size="8" fill="#8b949e">Dev!! New Movie is out</text>
+        </g>
+      </g>
+
+      <!-- Msg 2 (Sent - Right, Y=60) -->
+      <g transform="translate(56, 60)">
+        <g class="msg-right-2">
+          <rect x="0" y="0" width="160" height="40" class="chat-bg-sent" />
+          <rect x="0" y="0" width="160" height="40" fill="none" stroke="#ff007f" stroke-width="0.8" rx="6" />
+          <text x="8" y="14" class="chat-txt" fill="#7ee787">Dev</text> <!-- Green Fill -->
+          <text x="8" y="28" class="chat-txt" font-size="8" fill="#7ee787">Gr8! Let's Goooo...</text>
+        </g>
+      </g>
+
+      <!-- Msg 3 (Received - Left, Y=110) -->
+      <g transform="translate(10, 110)">
+        <g class="msg-left-3">
+          <rect x="0" y="0" width="160" height="40" class="chat-bg-recv" />
+          <text x="8" y="14" class="chat-txt" fill="#7ee787">Friends_Group</text> <!-- Green Fill -->
+          <text x="8" y="28" class="chat-txt" font-size="8" fill="#8b949e">Who's booking tickets?</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Screen Navigation bar (Bottom notch) -->
+    <rect x="100" y="415" width="100" height="4" rx="2" fill="#8b949e" opacity="0.6" />
+  </g>
+</svg>

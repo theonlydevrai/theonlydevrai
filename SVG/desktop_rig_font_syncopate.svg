@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" fill="none">
+  <style>
+    .bezel { fill: #1c1b22; stroke: #3a3847; stroke-width: 2; rx: 8; ry: 8; }
+    
+    .screen { 
+      fill: #0d0f14; 
+      stroke-width: 1.5; 
+      rx: 3; 
+      ry: 3; 
+      animation: border-glow 3s infinite alternate ease-in-out;
+    }
+    
+    @keyframes border-glow {
+      0% { stroke: #00f0ff; filter: drop-shadow(0 0 1px #00f0ff); }
+      50% { stroke: #bd00ff; filter: drop-shadow(0 0 3px #bd00ff); }
+      100% { stroke: #ff007f; filter: drop-shadow(0 0 1px #ff007f); }
+    }
+    
+    .stand { fill: #2d2b38; }
+    .desk-line { stroke: #3a3847; stroke-width: 3; }
+    
+    .pc-case { fill: #1c1b22; stroke: #3a3847; stroke-width: 2; rx: 4; ry: 4; }
+    .pc-glass { fill: #07080d; stroke: #3a3847; stroke-width: 1.2; rx: 2; ry: 2; }
+    .fan { fill: none; stroke: #00f0ff; stroke-width: 2.5; stroke-dasharray: 4 8; transform-origin: 540px 115px; animation: spin 1s infinite linear; }
+    .fan-2 { transform-origin: 540px 175px; stroke: #ff007f; animation: spin 1.2s infinite linear; }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Option 4: Syncopate - Sharp Wide Uppercase Font */
+    .monitor-name {
+      font-family: 'Syncopate', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      animation: text-pulse 2s infinite alternate ease-in-out;
+    }
+    
+    @keyframes text-pulse {
+      0% { fill: #ffffff; filter: drop-shadow(0 0 2px #ffffff); }
+      100% { fill: #7ee787; filter: drop-shadow(0 0 8px #7ee787); }
+    }
+
+    .text-underline {
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-dasharray: 90;
+      stroke-dashoffset: 90;
+      animation: draw-line-sync 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes draw-line-sync {
+      0% { stroke-dashoffset: 90; }
+      100% { stroke-dashoffset: 0; }
+    }
+    
+    .ps5-plate-l { fill: #d1d5db; stroke: #9ca3af; stroke-width: 0.5; }
+    .ps5-plate-r { fill: #ffffff; stroke: #e5e7eb; stroke-width: 0.5; }
+    .ps5-core { fill: #07080d; }
+    .ps5-base { fill: #11111b; }
+    .ps5-led { stroke: #00f0ff; stroke-width: 0.6; fill: none; filter: drop-shadow(0 0 1px #00f0ff); }
+  </style>
+
+  <!-- Desk Line -->
+  <line x1="10" y1="240" x2="590" y2="240" stroke="#3a3847" stroke-width="3" />
+
+  <!-- PS5 Console -->
+  <ellipse cx="42" cy="234" rx="20" ry="4" class="ps5-base" />
+  <path d="M 37 110 C 32 135, 30 205, 34 230 L 40 230 C 37 205, 37 135, 41 110 Z" class="ps5-plate-l" />
+  <path d="M 47 110 C 44 135, 46 205, 49 230 L 43 230 C 40 205, 39 135, 43 110 Z" class="ps5-plate-r" />
+  <path d="M 41 110 C 41 135, 42 205, 43 230 L 45 230 C 46 205, 47 135, 47 110 Z" class="ps5-core" />
+  <path d="M 41 110 C 41 135, 42 205, 43 230" class="ps5-led" />
+
+  <!-- PS5 Controller -->
+  <g>
+    <path d="M 68 226 C 68 222, 86 222, 86 226 L 82 233 L 72 233 Z" fill="#0c0d12" stroke="#1c1b22" stroke-width="0.5" />
+    <rect x="73" y="224" width="8" height="5" fill="#1c1b22" rx="0.5" />
+    <path d="M 67 225 C 64 227, 60 231, 62 237 C 63 239, 69 238, 71 233 C 72 230, 70 226, 67 225 Z" fill="#ffffff" stroke="#9ca3af" stroke-width="0.4" />
+    <path d="M 87 225 C 90 227, 94 231, 92 237 C 91 239, 85 238, 83 233 C 82 230, 84 226, 87 225 Z" fill="#ffffff" stroke="#9ca3af" stroke-width="0.4" />
+    <path d="M 73 233 L 81 233 L 83 237 L 71 237 Z" fill="#07080d" />
+    <line x1="72.5" y1="225" x2="72.5" y2="230" stroke="#00f0ff" stroke-width="0.4" style="filter: drop-shadow(0 0 0.5px #00f0ff);" />
+    <line x1="81.5" y1="225" x2="81.5" y2="230" stroke="#00f0ff" stroke-width="0.4" style="filter: drop-shadow(0 0 0.5px #00f0ff);" />
+    <circle cx="73.5" cy="232.5" r="1.5" fill="#30363d" />
+    <circle cx="80.5" cy="232.5" r="1.5" fill="#30363d" />
+  </g>
+
+  <!-- Monitor 1 (Left) -->
+  <rect x="195" y="180" width="14" height="50" class="stand" />
+  <ellipse cx="202" cy="230" rx="26" ry="5" class="stand" />
+  <rect x="110" y="55" width="184" height="120" class="bezel" />
+  <rect x="117" y="63" width="170" height="104" class="screen" />
+  <text x="202" y="117" class="monitor-name" text-anchor="middle">DEV</text>
+  <line x1="157" y1="129" x2="247" y2="129" stroke="#00f0ff" class="text-underline" />
+
+  <!-- Monitor 2 (Right) -->
+  <rect x="395" y="180" width="14" height="50" class="stand" />
+  <ellipse cx="402" cy="230" rx="26" ry="5" class="stand" />
+  <rect x="310" y="55" width="184" height="120" class="bezel" />
+  <rect x="317" y="63" width="170" height="104" class="screen" />
+  <text x="402" y="117" class="monitor-name" text-anchor="middle">RAI</text>
+  <line x1="357" y1="129" x2="447" y2="129" stroke="#ff007f" class="text-underline" />
+
+  <!-- PC Case Tower -->
+  <rect x="510" y="60" width="65" height="170" class="pc-case" />
+  <rect x="516" y="80" width="53" height="140" class="pc-glass" />
+  <rect x="520" y="82" width="45" height="8" fill="#1c1b22" />
+  <rect x="555" y="100" width="1.5" height="26" fill="#00f0ff" style="filter: drop-shadow(0 0 0.8px #00f0ff);" />
+  <rect x="558" y="100" width="1.5" height="26" fill="#ffe600" style="filter: drop-shadow(0 0 0.8px #ffe600);" />
+  <rect x="561" y="100" width="1.5" height="26" fill="#ff007f" style="filter: drop-shadow(0 0 0.8px #ff007f);" />
+  <rect x="520" y="142" width="46" height="18" fill="#1c1b22" stroke="#313244" stroke-width="0.8" />
+  <rect x="526" y="146" width="22" height="10" fill="#0d0f14" rx="1" />
+  <text x="537" y="153" font-family="'Fira Code', monospace" font-size="5" fill="#7ee787" font-weight="bold" text-anchor="middle">RTX</text>
+  <circle cx="540" cy="115" r="12" fill="none" stroke="#222" stroke-width="1" />
+  <circle cx="540" cy="115" r="9" class="fan" />
+  <circle cx="540" cy="175" r="12" fill="none" stroke="#222" stroke-width="1" />
+  <circle cx="540" cy="175" r="9" class="fan fan-2" />
+
+  <!-- Keyboard Layout -->
+  <g>
+    <polygon points="230,220 350,220 358,235 222,235" fill="#1e1e2e" stroke="#3a3847" stroke-width="1.2" />
+    <polygon points="222,235 358,235 360,238 220,238" fill="#11111b" />
+    <polygon points="230,220 350,220 358,235 222,235" fill="none" stroke="#00f0ff" stroke-width="2" style="filter: drop-shadow(0 0 3px #00f0ff); opacity: 0.8; animation: border-glow 3s infinite alternate ease-in-out;" />
+    <path d="M 233 222 L 347 222" stroke="#ff007f" stroke-width="1.2" stroke-dasharray="2.5 1.5" style="filter: drop-shadow(0 0 0.8px #ff007f);" />
+    <path d="M 231 225 L 349 225" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="3.2 1.8" style="filter: drop-shadow(0 0 0.8px #00f0ff);" />
+    <path d="M 229 228 L 351 228" stroke="#ffe600" stroke-width="1.2" stroke-dasharray="2.8 1.6" style="filter: drop-shadow(0 0 0.8px #ffe600);" />
+    <path d="M 227 231 L 353 231" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="3.8 2.0" style="filter: drop-shadow(0 0 0.8px #7ee787);" />
+    <line x1="272" y1="233" x2="308" y2="233" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" style="filter: drop-shadow(0 0 1px #ffffff);" />
+  </g>
+  
+  <!-- Mouse -->
+  <rect x="374" y="222" width="10" height="15" rx="5" fill="#1c1b22" stroke="#313244" stroke-width="0.8" />
+  <line x1="379" y1="222" x2="379" y2="227" stroke="#313244" stroke-width="0.6" />
+  <line x1="379" y1="224" x2="379" y2="227" stroke="#00f0ff" stroke-width="1.2" style="filter: drop-shadow(0 0 1px #00f0ff);" />
+  <path d="M 374.5 228 C 374.5 233, 377 236, 379 236 C 381 236, 383.5 233, 383.5 228" fill="none" stroke="#ff007f" stroke-width="0.8" style="filter: drop-shadow(0 0 1px #ff007f);" />
+</svg>

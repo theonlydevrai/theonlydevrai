@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="350" viewBox="0 0 300 350" fill="none">
+  <style>
+    .strap { fill: #1c1b22; stroke: #2a2833; stroke-width: 1.5; }
+    .case { fill: #1e1e2e; stroke: #313244; stroke-width: 3.5; rx: 24; ry: 24; filter: drop-shadow(0px 8px 8px rgba(0,0,0,0.35)); }
+    .screen { fill: #0a0512; stroke: #00f0ff; stroke-width: 1.5; filter: drop-shadow(0px 0px 5px rgba(0, 240, 255, 0.4)); rx: 16; ry: 16; }
+    
+    /* Display texts */
+    .time-lbl { font-family: 'Fira Code', monospace; font-size: 28px; fill: #ffffff; font-weight: 800; }
+    .date-lbl { font-family: 'Fira Code', monospace; font-size: 9px; fill: #ff007f; font-weight: bold; letter-spacing: 1px; }
+    .stat-lbl { font-family: 'Fira Code', monospace; font-size: 8px; fill: #8b949e; }
+    .stat-val { fill: #7ee787; font-weight: bold; }
+
+    /* Ring charts */
+    .ring-bg { stroke: #1f2335; stroke-width: 3.5; fill: none; }
+    .ring-fill { stroke: #ff007f; stroke-width: 3.5; stroke-linecap: round; fill: none; }
+    .ring-fill-2 { stroke: #00f0ff; stroke-width: 3.5; stroke-linecap: round; fill: none; }
+
+    /* Heart wave */
+    .pulse-path { stroke: #7ee787; stroke-width: 1.5; fill: none; animation: pulse-run 2s infinite linear; }
+    @keyframes pulse-run {
+      0% { stroke-dashoffset: 150; }
+      100% { stroke-dashoffset: 0; }
+    }
+  </style>
+
+  <!-- Watch Straps (Vertical) -->
+  <path d="M 105 70 L 105 15 L 195 15 L 195 70 Z" class="strap" />
+  <path d="M 105 260 L 105 335 L 195 335 L 195 260 Z" class="strap" />
+  
+  <!-- Digital Crown Dial on right side -->
+  <rect x="233" y="105" width="8" height="24" rx="2" fill="#2d2b38" stroke="#1c1b22" />
+  <rect x="233" y="175" width="6" height="15" rx="1.5" fill="#2d2b38" stroke="#1c1b22" />
+
+  <!-- Watch Case (Square shape) -->
+  <rect x="65" y="70" width="170" height="190" class="case" />
+  
+  <!-- Screen Glass -->
+  <rect x="75" y="80" width="150" height="170" class="screen" />
+
+  <!-- LCD Screen Contents -->
+  <!-- Updated date to WED, JAN 26th -->
+  <text x="150" y="112" class="date-lbl" text-anchor="middle">WED, JAN 26</text>
+  <text x="150" y="142" class="time-lbl" text-anchor="middle">18:32</text>
+
+  <!-- Concentric Rings (Bottom Right corner) -->
+  <g transform="translate(180, 195)">
+    <circle cx="0" cy="0" r="16" class="ring-bg" />
+    <circle cx="0" cy="0" r="16" class="ring-fill" stroke-dasharray="100.5" stroke-dashoffset="25" transform="rotate(-90)" />
+    
+    <circle cx="0" cy="0" r="10" class="ring-bg" />
+    <circle cx="0" cy="0" r="10" class="ring-fill-2" stroke-dasharray="62.8" stroke-dashoffset="15" transform="rotate(-90)" />
+  </g>
+
+  <!-- Heart Rate Pulse (Bottom Left corner) -->
+  <g transform="translate(90, 185)">
+    <path d="M 0 10 L 10 10 L 12 0 L 15 20 L 18 10 L 30 10 L 32 -5 L 35 25 L 38 10 L 60 10" class="pulse-path" stroke-dasharray="150" />
+    <text x="0" y="32" class="stat-lbl">HR: <tspan class="stat-val" fill="#7ee787">84 BPM</tspan></text>
+  </g>
+
+  <!-- Step Count details -->
+  <text x="90" y="170" class="stat-lbl">STEPS: <tspan class="stat-val" fill="#00f0ff">10,245</tspan></text>
+</svg>

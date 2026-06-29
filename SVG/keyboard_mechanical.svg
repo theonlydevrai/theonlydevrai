@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="200" viewBox="0 0 450 200" fill="none">
+  <style>
+    .case { fill: #1e1e2e; stroke: #313244; stroke-width: 3; rx: 8; ry: 8; }
+    .key { fill: #151624; stroke: #1e1e2e; stroke-width: 1; rx: 2; ry: 2; }
+    
+    /* RGB Key Sweeping Animation */
+    .rgb-key { animation: rgb-cycle 4s infinite linear; }
+    
+    @keyframes rgb-cycle {
+      0% { fill: rgba(255, 0, 85, 0.2); stroke: #ff0055; filter: drop-shadow(0 0 2px #ff0055); }
+      25% { fill: rgba(0, 240, 255, 0.2); stroke: #00f0ff; filter: drop-shadow(0 0 2px #00f0ff); }
+      50% { fill: rgba(126, 231, 135, 0.2); stroke: #7ee787; filter: drop-shadow(0 0 2px #7ee787); }
+      75% { fill: rgba(187, 154, 243, 0.2); stroke: #bb9af3; filter: drop-shadow(0 0 2px #bb9af3); }
+      100% { fill: rgba(255, 0, 85, 0.2); stroke: #ff0055; filter: drop-shadow(0 0 2px #ff0055); }
+    }
+
+    /* Staggered column delays for wave movement */
+    .c-0 { animation-delay: 0.0s; }
+    .c-1 { animation-delay: 0.3s; }
+    .c-2 { animation-delay: 0.6s; }
+    .c-3 { animation-delay: 0.9s; }
+    .c-4 { animation-delay: 1.2s; }
+    .c-5 { animation-delay: 1.5s; }
+    .c-6 { animation-delay: 1.8s; }
+    .c-7 { animation-delay: 2.1s; }
+    .c-8 { animation-delay: 2.4s; }
+    .c-9 { animation-delay: 2.7s; }
+    .c-10 { animation-delay: 3.0s; }
+    .c-11 { animation-delay: 3.3s; }
+    
+    .key-cap-txt { fill: #8b949e; font-family: 'Fira Code', monospace; font-size: 7px; font-weight: bold; }
+    .lbl-title { fill: #ffffff; font-family: 'Fira Code', monospace, sans-serif; font-size: 11px; font-weight: bold; }
+  </style>
+
+  <!-- Keyboard Base -->
+  <rect x="15" y="15" width="420" height="170" class="case" />
+
+  <!-- Grid of Keycaps (12 columns, 5 rows) -->
+  <!-- Row 1 (Y = 40) -->
+  <g>
+    <rect x="30" y="40" width="24" height="20" class="key rgb-key c-0" />
+    <text x="35" y="52" class="key-cap-txt">Esc</text>
+
+    <rect x="60" y="40" width="24" height="20" class="key rgb-key c-1" />
+    <rect x="90" y="40" width="24" height="20" class="key rgb-key c-2" />
+    <rect x="120" y="40" width="24" height="20" class="key rgb-key c-3" />
+    <rect x="150" y="40" width="24" height="20" class="key rgb-key c-4" />
+    <rect x="180" y="40" width="24" height="20" class="key rgb-key c-5" />
+    <rect x="210" y="40" width="24" height="20" class="key rgb-key c-6" />
+    <rect x="240" y="40" width="24" height="20" class="key rgb-key c-7" />
+    <rect x="270" y="40" width="24" height="20" class="key rgb-key c-8" />
+    <rect x="300" y="40" width="24" height="20" class="key rgb-key c-9" />
+    <rect x="330" y="40" width="24" height="20" class="key rgb-key c-10" />
+
+    <rect x="360" y="40" width="56" height="20" class="key rgb-key c-11" />
+    <text x="365" y="52" class="key-cap-txt">Backspace</text>
+  </g>
+
+  <!-- Row 2 (Y = 66) -->
+  <g>
+    <rect x="30" y="66" width="34" height="20" class="key rgb-key c-0" />
+    <text x="35" y="78" class="key-cap-txt">Tab</text>
+
+    <rect x="70" y="66" width="24" height="20" class="key rgb-key c-1" />
+    <rect x="100" y="66" width="24" height="20" class="key rgb-key c-2" />
+    <rect x="130" y="66" width="24" height="20" class="key rgb-key c-3" />
+    <rect x="160" y="66" width="24" height="20" class="key rgb-key c-4" />
+    <rect x="190" y="66" width="24" height="20" class="key rgb-key c-5" />
+    <rect x="220" y="66" width="24" height="20" class="key rgb-key c-6" />
+    <rect x="250" y="66" width="24" height="20" class="key rgb-key c-7" />
+    <rect x="280" y="66" width="24" height="20" class="key rgb-key c-8" />
+    <rect x="310" y="66" width="24" height="20" class="key rgb-key c-9" />
+    <rect x="340" y="66" width="24" height="20" class="key rgb-key c-10" />
+
+    <rect x="370" y="66" width="46" height="20" class="key rgb-key c-11" />
+    <text x="375" y="78" class="key-cap-txt">|</text>
+  </g>
+
+  <!-- Row 3 (Y = 92) -->
+  <g>
+    <rect x="30" y="92" width="44" height="20" class="key rgb-key c-0" />
+    <text x="35" y="104" class="key-cap-txt">Caps</text>
+
+    <rect x="80" y="92" width="24" height="20" class="key rgb-key c-1" />
+    <rect x="110" y="92" width="24" height="20" class="key rgb-key c-2" />
+    <rect x="140" y="92" width="24" height="20" class="key rgb-key c-3" />
+    <rect x="170" y="92" width="24" height="20" class="key rgb-key c-4" />
+    <rect x="200" y="92" width="24" height="20" class="key rgb-key c-5" />
+    <rect x="230" y="92" width="24" height="20" class="key rgb-key c-6" />
+    <rect x="260" y="92" width="24" height="20" class="key rgb-key c-7" />
+    <rect x="290" y="92" width="24" height="20" class="key rgb-key c-8" />
+    <rect x="320" y="92" width="24" height="20" class="key rgb-key c-9" />
+
+    <rect x="350" y="92" width="66" height="20" class="key rgb-key c-10" />
+    <text x="355" y="104" class="key-cap-txt">Enter</text>
+  </g>
+
+  <!-- Row 4 (Y = 118) -->
+  <g>
+    <rect x="30" y="118" width="56" height="20" class="key rgb-key c-0" />
+    <text x="35" y="130" class="key-cap-txt">Shift</text>
+
+    <rect x="92" y="118" width="24" height="20" class="key rgb-key c-2" />
+    <rect x="122" y="118" width="24" height="20" class="key rgb-key c-3" />
+    <rect x="152" y="118" width="24" height="20" class="key rgb-key c-4" />
+    <rect x="182" y="118" width="24" height="20" class="key rgb-key c-5" />
+    <rect x="212" y="118" width="24" height="20" class="key rgb-key c-6" />
+    <rect x="242" y="118" width="24" height="20" class="key rgb-key c-7" />
+    <rect x="272" y="118" width="24" height="20" class="key rgb-key c-8" />
+    <rect x="302" y="118" width="24" height="20" class="key rgb-key c-9" />
+
+    <rect x="332" y="118" width="84" height="20" class="key rgb-key c-10" />
+    <text x="337" y="130" class="key-cap-txt">Shift</text>
+  </g>
+
+  <!-- Row 5 (Y = 144) -->
+  <g>
+    <rect x="30" y="144" width="30" height="20" class="key rgb-key c-0" />
+    <text x="35" y="156" class="key-cap-txt">Ctrl</text>
+
+    <rect x="66" y="144" width="26" height="20" class="key rgb-key c-1" />
+    <rect x="98" y="144" width="26" height="20" class="key rgb-key c-2" />
+
+    <!-- Space Bar -->
+    <rect x="130" y="144" width="160" height="20" class="key rgb-key c-5" />
+    
+    <rect x="296" y="144" width="26" height="20" class="key rgb-key c-8" />
+    <rect x="328" y="144" width="26" height="20" class="key rgb-key c-9" />
+    <rect x="360" y="144" width="56" height="20" class="key rgb-key c-10" />
+    <text x="365" y="156" class="key-cap-txt">Ctrl</text>
+  </g>
+</svg>
