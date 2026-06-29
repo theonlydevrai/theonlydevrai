@@ -141,11 +141,10 @@
 
 ---
 
-<!-- 7. Achievements & Honors (Zig-Zag / Stacked) -->
+<!-- 7. Achievements & Honors (Isolated tables for clean backgrounds with borders) -->
 ## 🏆 Achievements & Honors
 
 <table width="100%">
-  <!-- Subsection 1: Technical & Hackathons (Image Left, Text Right) -->
   <tr>
     <td width="45%" align="center" valign="middle">
       <img src="SVG/drone.svg" width="95%" alt="Drone Telemetry Controller" />
@@ -161,14 +160,14 @@
   </tr>
 </table>
 
-<!-- Subsection 2: Public Speaking, Debate & Quizzing (Side-by-side layout) -->
+<!-- Subsection 2: Public Speaking, Debate & Quizzing (Side-by-side table) -->
 <hr />
 <table width="100%">
   <tr>
-    <td width="32%" align="center" valign="middle">
+    <td width="28%" align="center" valign="middle">
       <img src="SVG/earphones_rect_case_in.svg" width="95%" alt="Transparent Case Earbuds (In the middle of nothing, find yourself)" />
     </td>
-    <td width="36%" valign="top">
+    <td width="44%" valign="top">
       <h3 align="left">🗣️ Public Speaking, Debate &amp; Quizzing</h3>
       <ul>
         <li><strong>Medalist</strong> | World Scholar’s Cup (Earned 5 Gold Medals &amp; 2 Silver Medals)</li>
@@ -178,14 +177,15 @@
         <li><strong>Winner</strong> | Institute-Level Debate Competitions</li>
       </ul>
     </td>
-    <td width="32%" align="center" valign="middle">
+    <td width="28%" align="center" valign="middle">
       <img src="SVG/headset_headphones.svg" width="95%" alt="RGB Headset (A good speaker is a good listener)" />
     </td>
   </tr>
 </table>
 
+<!-- Subsection 3: Academic Excellence (Isolated table) -->
+<hr />
 <table width="100%">
-  <!-- Subsection 3: Academic Excellence (Image Left, Text Right) -->
   <tr>
     <td width="45%" align="center" valign="middle">
       <img src="SVG/keyboard_mechanical.svg" width="100%" alt="Mechanical Keyboard Backlight Grid" />
@@ -198,8 +198,11 @@
       </ul>
     </td>
   </tr>
-  
-  <!-- Subsection 4: Leadership & Positions of Responsibility (Text Left, Image Right) -->
+</table>
+
+<!-- Subsection 4: Leadership & Positions of Responsibility (Isolated table) -->
+<hr />
+<table width="100%">
   <tr>
     <td width="55%" valign="top">
       <h3>🤝 Leadership &amp; Positions of Responsibility</h3>
@@ -216,7 +219,7 @@
 
 ---
 
-<!-- 8. GitHub Stats and Smartwatches (Vertically Aligned) -->
+<!-- 8. GitHub Stats and Smartwatches (Table Layout) -->
 ## 📊 Telemetry & Workstation Stats
 
 <table width="100%">
