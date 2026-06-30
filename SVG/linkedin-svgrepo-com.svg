@@ -1,7 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
-  <!-- White background layer underneath to fill the transparent letters with solid white -->
-  <rect x="2.5" y="2.5" width="11" height="11" fill="#ffffff" rx="0.8" />
-  <!-- Original blue logo path with cutouts -->
-  <path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" id="linkedin">
+  <style>
+    @keyframes linkedinScalePop {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      19.9% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      20% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      23% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      24.2% {
+        transform: scale(0.98);
+      }
+      26% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes linkedinRotatePop {
+      0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      21.9% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      22% {
+        transform: scale(0) rotate(-15deg);
+        opacity: 0;
+      }
+      26.55% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 1;
+      }
+      27.95% {
+        transform: scale(0.95) rotate(-2deg);
+      }
+      29% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+    }
+
+    .bg-box {
+      transform-origin: 36px 36px;
+      animation: linkedinScalePop 10s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+
+    .logo-linkedin {
+      transform-origin: 36px 36px;
+      animation: linkedinRotatePop 10s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+  </style>
+  <g id="providers-list" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+    <g id="linkedin">
+      <rect id="Rectangle-2" class="bg-box" width="72" height="72" x="0" y="0" fill="#117EB8" rx="4"></rect>
+      <path id="Shape" class="logo-linkedin" fill="#FFF" d="M13.139 27.848h9.623V58.81h-9.623V27.848zm4.813-15.391c3.077 0 5.577 2.5 5.577 5.577 0 3.08-2.5 5.581-5.577 5.581a5.58 5.58 0 1 1 0-11.158zm10.846 15.39h9.23v4.231h.128c1.285-2.434 4.424-5 9.105-5 9.744 0 11.544 6.413 11.544 14.75V58.81h-9.617V43.753c0-3.59-.066-8.209-5-8.209-5.007 0-5.776 3.911-5.776 7.95V58.81h-9.615V27.848z"></path>
+    </g>
+  </g>
 </svg>

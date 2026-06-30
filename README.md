@@ -29,6 +29,9 @@
   </a>
   <a href="https://x.com/theonlydevrai" target="_blank">
     <img src="SVG/x-logo.svg" width="48" height="48" alt="Twitter / X" />
+  </a>  
+    <a href="https://www.quora.com/profile/Rai-Dev-Brajeshkumar" target="_blank">
+    <img src="SVG/quora.svg" width="48" height="48" alt="Quora" />
   </a>
 </p>
 
@@ -107,7 +110,7 @@
 <!-- 6. TECH PROJECTS -->
 ## 📁 Technical Projects
 
-### A. [Distributed Event Ticketing Platform](https://github.com/theonlydevrai/tms)
+### [A. Distributed Event Ticketing Platform](https://github.com/theonlydevrai/tms)
 <p align="center">
   <img src="SVG/smartphone.svg" width="40%" alt="Smartphone Ticket Booking Messages" />
 </p>
@@ -116,7 +119,7 @@
 * A high-performance, fault-tolerant movie ticket booking system built to handle heavy concurrency during high-demand periods. 
 * Integrates primary-backup replication, ring leader election (Chang-Roberts), Lamport logical clocks for conflict resolution, round-robin load balancing, and a multi-threaded background worker pool.
 
-### B. [Lex Simulacra: An AI Courtroom Simulator](https://github.com/prasad-gade05/Law_Courtroom_Simulator)
+### [B. Lex Simulacra: An AI Courtroom Simulator](https://github.com/prasad-gade05/Law_Courtroom_Simulator)
 <!-- Vertically Aligned: Phone 1 (Notch) -> Description -> Phone 2 (Retro) -->
 <p align="center">
   <img src="SVG/smartphone_notch.svg" width="40%" alt="Notch Phone Summon View" />
@@ -130,7 +133,7 @@
   <img src="SVG/smartphone_retro.svg" width="40%" alt="Retro Slider Phone Input View" />
 </p>
 
-### C. [Unified NLP Trust Tool](https://github.com/theonlydevrai/unified-nlp-trust-tool)
+### [C. Unified NLP Trust Tool](https://github.com/theonlydevrai/unified-nlp-trust-tool)
 <p align="center">
   <img src="SVG/smartphone_foldable.svg" width="45%" alt="Smartphone Foldable Reviews Classification" />
 </p>

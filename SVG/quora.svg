@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1067" height="1067" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" id="quora">
+  <style>
+    @keyframes quoraScalePop {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      79.9% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      80% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      83% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      84.2% {
+        transform: scale(0.98);
+      }
+      86% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes quoraRotatePop {
+      0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      81.9% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      82% {
+        transform: scale(0) rotate(-15deg);
+        opacity: 0;
+      }
+      86.55% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 1;
+      }
+      87.95% {
+        transform: scale(0.95) rotate(-2deg);
+      }
+      89% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+    }
+
+    .bg-box {
+      transform-origin: 533.5px 533.5px;
+      animation: quoraScalePop 10s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+
+    .logo-q {
+      transform-origin: 533.5px 533.5px;
+      animation: quoraRotatePop 10s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+  </style>
+  <g>
+    <!-- Background Square -->
+    <path class="bg-box" d="M998.971,169.8c-0,-27.627 -10.975,-54.122 -30.51,-73.657c-19.535,-19.535 -46.03,-30.51 -73.657,-30.51l-725,0c-27.626,0 -54.122,10.975 -73.657,30.51c-19.535,19.535 -30.509,46.03 -30.509,73.657l-0,725c-0,27.627 10.974,54.122 30.509,73.657c19.535,19.535 46.031,30.51 73.657,30.51c179.58,-0 545.42,-0 725,-0c27.627,-0 54.122,-10.975 73.657,-30.51c19.535,-19.535 30.51,-46.03 30.51,-73.657c-0,-179.58 -0,-545.42 -0,-725Z" style="fill:#ab2200"></path>
+    
+    <!-- Inner Quora 'Q' Letter -->
+    <path class="logo-q" d="M591.155,794.348c-18.99,4.169 -38.678,6.361 -58.851,6.361c-158.092,0 -286.443,-134.674 -286.443,-300.556c-0,-165.881 128.351,-300.556 286.443,-300.556c158.093,0 286.444,134.675 286.444,300.556c-0,108.138 -54.546,203.014 -136.327,255.968c28.811,52.066 77.189,48.77 77.189,48.77l-0,55.398c-96.656,21.856 -143.602,-19.917 -168.455,-65.941Zm44.798,-127.024c31.398,-41.212 51.148,-100.863 51.148,-167.171c-0,-124.264 -69.362,-225.152 -154.797,-225.152c-85.434,0 -154.796,100.888 -154.796,225.152c-0,124.265 69.362,225.152 154.796,225.152c11.038,-0 21.808,-1.684 32.2,-4.887c-0.374,-1.352 -0.737,-2.645 -1.092,-3.87c-12.943,-44.711 -70.449,-44.018 -70.449,-44.018l0,-49.638c68.233,-21.731 112.725,4.707 142.99,44.432Z" style="fill:#fff"></path>
+  </g>
+</svg>

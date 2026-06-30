@@ -1,11 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z" fill="white"/>
-<path d="M22.0515 8.52295L16.0644 13.1954L9.94043 8.52295V8.52421L9.94783 8.53053V15.0732L15.9954 19.8466L22.0515 15.2575V8.52295Z" fill="#EA4335"/>
-<path d="M23.6231 7.38639L22.0508 8.52292V15.2575L26.9983 11.459V9.17074C26.9983 9.17074 26.3978 5.90258 23.6231 7.38639Z" fill="#FBBC05"/>
-<path d="M22.0508 15.2575V23.9924H25.8428C25.8428 23.9924 26.9219 23.8813 26.9995 22.6513V11.459L22.0508 15.2575Z" fill="#34A853"/>
-<path d="M9.94811 24.0001V15.0732L9.94043 15.0669L9.94811 24.0001Z" fill="#C5221F"/>
-<path d="M9.94014 8.52404L8.37646 7.39382C5.60179 5.91001 5 9.17692 5 9.17692V11.4651L9.94014 15.0667V8.52404Z" fill="#C5221F"/>
-<path d="M9.94043 8.52441V15.0671L9.94811 15.0734V8.53073L9.94043 8.52441Z" fill="#C5221F"/>
-<path d="M5 11.4668V22.6591C5.07646 23.8904 6.15673 24.0003 6.15673 24.0003H9.94877L9.94014 15.0671L5 11.4668Z" fill="#4285F4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.51 38.51" id="gmail">
+  <style>
+    @keyframes gmailScalePop {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      3% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      4.2% {
+        transform: scale(0.98);
+      }
+      6% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes gmailRotatePop {
+      0% {
+        transform: scale(0) rotate(-15deg);
+        opacity: 0;
+      }
+      2% {
+        transform: scale(0) rotate(-15deg);
+        opacity: 0;
+      }
+      6.55% {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 1;
+      }
+      7.95% {
+        transform: scale(0.95) rotate(-2deg);
+      }
+      9% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+    }
+
+    .bg-box {
+      transform-origin: 19.255px 19.255px;
+      animation: gmailScalePop 10s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+
+    .logo-gmail {
+      transform-origin: 19.255px 19.255px;
+      animation: gmailRotatePop 10s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+    }
+  </style>
+  <g>
+    <g>
+      <rect class="bg-box" width="38.51" height="38.51" fill="#f2f2f2" rx="6.97" ry="6.97"></rect>
+      <g class="logo-gmail">
+        <path fill="#c6c6c6" d="M38.51,31.54v-12.88c-2.6-2.6-5.19-5.2-7.79-7.79-.82-.82-2.19-1.06-3.26-.25l-1.55,1.16-6.65,4.99-6.65-4.99-1.55-1.16c-1.65-1.23-3.99-.06-3.99,1.99v14.13c0,.5.22.94.57,1.24,3.51,3.51,7.02,7.02,10.53,10.53h13.38c3.83,0,6.97-3.14,6.97-6.97Z"></path>
+        <g>
+          <path fill="#4285f4" d="M8.72,28.4h3.88v-9.42l-5.54-4.16v11.91c0,.92.75,1.66,1.66,1.66"></path>
+          <path fill="#34a853" d="M25.9,28.4h3.88c.92,0,1.66-.75,1.66-1.66v-11.91l-5.54,4.16"></path>
+          <path fill="#fbbc04" d="M25.9,11.77v7.2l5.54-4.16v-2.22c0-2.06-2.35-3.23-3.99-1.99"></path>
+          <path fill="#ea4335" d="M12.6,18.98v-7.2l6.65,4.99,6.65-4.99v7.2l-6.65,4.99"></path>
+          <path fill="#c5221f" d="M7.06,12.61v2.22l5.54,4.16v-7.2l-1.55-1.16c-1.65-1.23-3.99-.06-3.99,1.99"></path>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>
