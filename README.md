@@ -153,7 +153,7 @@
       <img src="SVG/drone.svg" width="95%" alt="Drone Telemetry Controller" />
     </td>
     <td width="55%" valign="top">
-      <h3>💻 Technical &amp; Hackathons</h3>
+      <h3>💻 Key Technical Achievements</h3>
       <ul>
         <li><strong>Winner</strong> | State-Level MSBTE Project Competition</li>
         <li><strong>Winner</strong> | Makerthon Project Competition</li>

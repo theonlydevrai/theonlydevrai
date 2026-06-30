@@ -81,8 +81,8 @@
       <g transform="translate(10, 10)">
         <g class="msg-left-1">
           <rect x="0" y="0" width="160" height="40" class="chat-bg-recv" />
-          <text x="8" y="14" class="chat-txt" fill="#7ee787">Friends_Group</text> <!-- Green Fill -->
-          <text x="8" y="28" class="chat-txt" font-size="8" fill="#8b949e">Dev!! New Movie is out</text>
+          <text x="8" y="14" class="chat-txt" style="fill: #7ee787;">Friends_Group</text>
+          <text x="8" y="28" class="chat-txt" font-size="8">Dev!! New Movie is out</text>
         </g>
       </g>
 
@@ -91,8 +91,8 @@
         <g class="msg-right-2">
           <rect x="0" y="0" width="160" height="40" class="chat-bg-sent" />
           <rect x="0" y="0" width="160" height="40" fill="none" stroke="#ff007f" stroke-width="0.8" rx="6" />
-          <text x="8" y="14" class="chat-txt" fill="#7ee787">Dev</text> <!-- Green Fill -->
-          <text x="8" y="28" class="chat-txt" font-size="8" fill="#7ee787">Gr8! Let's Goooo...</text>
+          <text x="8" y="14" class="chat-txt" style="fill: #7ee787;">Dev</text>
+          <text x="8" y="28" class="chat-txt" font-size="8">Gr8! Let's Goooo...</text>
         </g>
       </g>
 
@@ -100,8 +100,8 @@
       <g transform="translate(10, 110)">
         <g class="msg-left-3">
           <rect x="0" y="0" width="160" height="40" class="chat-bg-recv" />
-          <text x="8" y="14" class="chat-txt" fill="#7ee787">Friends_Group</text> <!-- Green Fill -->
-          <text x="8" y="28" class="chat-txt" font-size="8" fill="#8b949e">Who's booking tickets?</text>
+          <text x="8" y="14" class="chat-txt" style="fill: #7ee787;">Friends_Group</text>
+          <text x="8" y="28" class="chat-txt" font-size="8">Who's booking tickets?</text>
         </g>
       </g>
     </g>
